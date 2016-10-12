@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_OooksJCJEeaFOKXs-yHBAw">
+  <modelElement href="CS313PartA2.uml#_OniYgJCJEeaFOKXs-yHBAw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_PLO7cJCJEeaFOKXs-yHBAw" sourceAnchor="73.0,0.0" targetAnchor="156.0,92.0" target="_PLfaIJCJEeaFOKXs-yHBAw" source="_PLVCEJCJEeaFOKXs-yHBAw">
+    <modelElement href="CS313PartA2.uml#_OznsspCJEeaFOKXs-yHBAw"/>
+    <nameVisual xmi:id="_PLO7cZCJEeaFOKXs-yHBAw" text="">
+      <visualProperties xmi:id="_PS0KIJCJEeaFOKXs-yHBAw" position="-13.0,-15.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_PLO7cpCJEeaFOKXs-yHBAw" aggregationKind="NONE" name="standingOrder" navigable="true">
+      <modelElement href="CS313PartA2.uml#_OznFopCJEeaFOKXs-yHBAw"/>
+      <visualProperties xmi:id="_PSzjEJCJEeaFOKXs-yHBAw" position="2.0,-56.0"/>
+      <visibility xmi:id="_PLO7c5CJEeaFOKXs-yHBAw" label="+"/>
+      <cardinality xmi:id="_PLO7dJCJEeaFOKXs-yHBAw" label="*" max="-1"/>
+    </sourceRole>
+    <targetRole xmi:id="_PLO7dZCJEeaFOKXs-yHBAw" aggregationKind="NONE" name="student" navigable="true">
+      <modelElement href="CS313PartA2.uml#_OzmekZCJEeaFOKXs-yHBAw"/>
+      <visualProperties xmi:id="_PS0KIZCJEeaFOKXs-yHBAw" position="-96.0,1.0"/>
+      <visibility xmi:id="_PLO7dpCJEeaFOKXs-yHBAw" label="+"/>
+      <cardinality xmi:id="_PLO7d5CJEeaFOKXs-yHBAw" label="*" max="-1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_ae6PIJCJEeaFOKXs-yHBAw" sourceAnchor="156.0,0.0" targetAnchor="125.0,175.0" superClass="_PKvzQJCJEeaFOKXs-yHBAw" subClass="_PLfaIJCJEeaFOKXs-yHBAw">
+    <modelElement href="CS313PartA2.uml#_ae19sJCJEeaFOKXs-yHBAw"/>
+    <bendpoints xmi:id="_gHx8IZCJEeaFOKXs-yHBAw" sourceY="-30" targetX="307" targetY="56"/>
+    <bendpoints xmi:id="_gHx8IpCJEeaFOKXs-yHBAw" sourceX="-307" sourceY="-30" targetY="56"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_aqiQUJCJEeaFOKXs-yHBAw" sourceAnchor="175.0,0.0" targetAnchor="125.0,175.0" superClass="_PKvzQJCJEeaFOKXs-yHBAw" subClass="_PK3vEJCJEeaFOKXs-yHBAw">
+    <modelElement href="CS313PartA2.uml#_aqgbIJCJEeaFOKXs-yHBAw"/>
+    <bendpoints xmi:id="_gHxVEJCJEeaFOKXs-yHBAw" sourceY="-62" targetX="-334" targetY="56"/>
+    <bendpoints xmi:id="_gHxVEZCJEeaFOKXs-yHBAw" sourceX="334" sourceY="-62" targetY="56"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_a9sc4JCJEeaFOKXs-yHBAw" sourceAnchor="15.0,0.0" targetAnchor="125.0,175.0" superClass="_PKvzQJCJEeaFOKXs-yHBAw" subClass="_PLA5AJCJEeaFOKXs-yHBAw">
+    <modelElement href="CS313PartA2.uml#_a9mWQJCJEeaFOKXs-yHBAw"/>
+    <bendpoints xmi:id="_gHxVEpCJEeaFOKXs-yHBAw" sourceY="-99" targetX="4" targetY="56"/>
+    <bendpoints xmi:id="_gHx8IJCJEeaFOKXs-yHBAw" sourceX="-4" sourceY="-99" targetY="56"/>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_PLVCEJCJEeaFOKXs-yHBAw" name="StandingOrder" associationsOut="_PLO7cJCJEeaFOKXs-yHBAw">
+    <modelElement href="CS313PartA2.uml#_OzQgUJCJEeaFOKXs-yHBAw"/>
+    <visualProperties xmi:id="_PLVCEZCJEeaFOKXs-yHBAw" position="767.0,492.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_PLVCEpCJEeaFOKXs-yHBAw" label="+"/>
+    <attributes xmi:id="_PLVCE5CJEeaFOKXs-yHBAw" name="daysTillPayment">
+      <modelElement href="CS313PartA2.uml#_OzmekJCJEeaFOKXs-yHBAw"/>
+      <visibility xmi:id="_PLVCFJCJEeaFOKXs-yHBAw" label="+"/>
+      <cardinality xmi:id="_PLVCFZCJEeaFOKXs-yHBAw" label="1" max="1" min="1"/>
+      <type xmi:id="_PLVCFpCJEeaFOKXs-yHBAw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_PLVCF5CJEeaFOKXs-yHBAw" name="student">
+      <modelElement href="CS313PartA2.uml#_OzmekZCJEeaFOKXs-yHBAw"/>
+      <visibility xmi:id="_PLVCGJCJEeaFOKXs-yHBAw" label="+"/>
+      <cardinality xmi:id="_PLVCGZCJEeaFOKXs-yHBAw" label="*" max="-1"/>
+      <type xmi:id="_PLVCGpCJEeaFOKXs-yHBAw" name="Student">
+        <modelElement href="CS313PartA2.uml#_OzS8kJCJEeaFOKXs-yHBAw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_PLVCG5CJEeaFOKXs-yHBAw" name="amount">
+      <modelElement href="CS313PartA2.uml#_OzoTwJCJEeaFOKXs-yHBAw"/>
+      <visibility xmi:id="_PLVCHJCJEeaFOKXs-yHBAw" label="+"/>
+      <cardinality xmi:id="_PLVCHZCJEeaFOKXs-yHBAw" label="1" max="1" min="1"/>
+      <type xmi:id="_PLVCHpCJEeaFOKXs-yHBAw" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_PK3vEJCJEeaFOKXs-yHBAw" name="Current" generalizations="_aqiQUJCJEeaFOKXs-yHBAw">
+    <modelElement href="CS313PartA2.uml#_OzOrIJCJEeaFOKXs-yHBAw"/>
+    <visualProperties xmi:id="_PK4WIJCJEeaFOKXs-yHBAw" position="24.0,356.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_PK4WIZCJEeaFOKXs-yHBAw" label="+"/>
+    <operations xmi:id="_PK4WIpCJEeaFOKXs-yHBAw" name="transfer">
+      <modelElement href="CS313PartA2.uml#_OzfJ0JCJEeaFOKXs-yHBAw"/>
+      <visibility xmi:id="_PK4WI5CJEeaFOKXs-yHBAw" label="+"/>
+      <cardinality xmi:id="_PK4WJJCJEeaFOKXs-yHBAw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_PK4WJZCJEeaFOKXs-yHBAw">
+        <modelElement href="CS313PartA2.uml#_Ozfw4pCJEeaFOKXs-yHBAw"/>
+        <type xmi:id="_PK4WJpCJEeaFOKXs-yHBAw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_PK4WJ5CJEeaFOKXs-yHBAw" name="value">
+        <modelElement href="CS313PartA2.uml#_Ozfw4JCJEeaFOKXs-yHBAw"/>
+        <cardinality xmi:id="_PK4WKJCJEeaFOKXs-yHBAw" label="1" max="1" min="1"/>
+        <type xmi:id="_PK4WKZCJEeaFOKXs-yHBAw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_PK4WKpCJEeaFOKXs-yHBAw" name="recipient">
+        <modelElement href="CS313PartA2.uml#_Ozfw4ZCJEeaFOKXs-yHBAw"/>
+        <cardinality xmi:id="_PK4WK5CJEeaFOKXs-yHBAw" label="1" max="1" min="1"/>
+        <type xmi:id="_PK4WLJCJEeaFOKXs-yHBAw" name="Account">
+          <modelElement href="CS313PartA2.uml#_OzJyoJCJEeaFOKXs-yHBAw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_PLA5AJCJEeaFOKXs-yHBAw" name="Saver" generalizations="_a9sc4JCJEeaFOKXs-yHBAw">
+    <modelElement href="CS313PartA2.uml#_OzP5QJCJEeaFOKXs-yHBAw"/>
+    <visualProperties xmi:id="_PLA5AZCJEeaFOKXs-yHBAw" position="522.0,393.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_PLA5ApCJEeaFOKXs-yHBAw" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_PLfaIJCJEeaFOKXs-yHBAw" name="Student" associationsIn="_PLO7cJCJEeaFOKXs-yHBAw" generalizations="_ae6PIJCJEeaFOKXs-yHBAw">
+    <modelElement href="CS313PartA2.uml#_OzS8kJCJEeaFOKXs-yHBAw"/>
+    <visualProperties xmi:id="_PLfaIZCJEeaFOKXs-yHBAw" position="684.0,324.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_PLfaIpCJEeaFOKXs-yHBAw" label="+"/>
+    <attributes xmi:id="_PLfaI5CJEeaFOKXs-yHBAw" name="standingOrder">
+      <modelElement href="CS313PartA2.uml#_OznFopCJEeaFOKXs-yHBAw"/>
+      <visibility xmi:id="_PLfaJJCJEeaFOKXs-yHBAw" label="+"/>
+      <cardinality xmi:id="_PLfaJZCJEeaFOKXs-yHBAw" label="*" max="-1"/>
+      <type xmi:id="_PLfaJpCJEeaFOKXs-yHBAw" name="StandingOrder">
+        <modelElement href="CS313PartA2.uml#_OzQgUJCJEeaFOKXs-yHBAw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_PLfaJ5CJEeaFOKXs-yHBAw" name="createSO">
+      <modelElement href="CS313PartA2.uml#_OzTjoJCJEeaFOKXs-yHBAw"/>
+      <visibility xmi:id="_PLfaKJCJEeaFOKXs-yHBAw" label="+"/>
+      <cardinality xmi:id="_PLfaKZCJEeaFOKXs-yHBAw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_PLfaKpCJEeaFOKXs-yHBAw" name="period">
+        <modelElement href="CS313PartA2.uml#_OzTjoZCJEeaFOKXs-yHBAw"/>
+        <cardinality xmi:id="_PLfaK5CJEeaFOKXs-yHBAw" label="1" max="1" min="1"/>
+        <type xmi:id="_PLfaLJCJEeaFOKXs-yHBAw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_PLfaLZCJEeaFOKXs-yHBAw" name="performSO">
+      <modelElement href="CS313PartA2.uml#_OzTjopCJEeaFOKXs-yHBAw"/>
+      <visibility xmi:id="_PLfaLpCJEeaFOKXs-yHBAw" label="+"/>
+      <cardinality xmi:id="_PLfaL5CJEeaFOKXs-yHBAw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_PLfaMJCJEeaFOKXs-yHBAw">
+        <modelElement href="CS313PartA2.uml#_OzUKsJCJEeaFOKXs-yHBAw"/>
+        <type xmi:id="_PLfaMZCJEeaFOKXs-yHBAw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_PLfaMpCJEeaFOKXs-yHBAw" name="transfer">
+      <modelElement href="CS313PartA2.uml#_OzjbQJCJEeaFOKXs-yHBAw"/>
+      <visibility xmi:id="_PLfaM5CJEeaFOKXs-yHBAw" label="+"/>
+      <cardinality xmi:id="_PLfaNJCJEeaFOKXs-yHBAw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_PLfaNZCJEeaFOKXs-yHBAw" name="amount">
+        <modelElement href="CS313PartA2.uml#_OzjbQZCJEeaFOKXs-yHBAw"/>
+        <cardinality xmi:id="_PLfaNpCJEeaFOKXs-yHBAw" label="1" max="1" min="1"/>
+        <type xmi:id="_PLfaN5CJEeaFOKXs-yHBAw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_PLfaOJCJEeaFOKXs-yHBAw" name="recipient">
+        <modelElement href="CS313PartA2.uml#_OzjbQpCJEeaFOKXs-yHBAw"/>
+        <cardinality xmi:id="_PLfaOZCJEeaFOKXs-yHBAw" label="1" max="1" min="1"/>
+        <type xmi:id="_PLfaOpCJEeaFOKXs-yHBAw" name="Account">
+          <modelElement href="CS313PartA2.uml#_OzJyoJCJEeaFOKXs-yHBAw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_PKvzQJCJEeaFOKXs-yHBAw" name="Account" subclassedBy="_ae6PIJCJEeaFOKXs-yHBAw _aqiQUJCJEeaFOKXs-yHBAw _a9sc4JCJEeaFOKXs-yHBAw">
+    <modelElement href="CS313PartA2.uml#_OzJyoJCJEeaFOKXs-yHBAw"/>
+    <visualProperties xmi:id="_PKvzQZCJEeaFOKXs-yHBAw" position="408.0,63.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_PKvzQpCJEeaFOKXs-yHBAw" label="+"/>
+    <attributes xmi:id="_PKvzQ5CJEeaFOKXs-yHBAw" name="balance">
+      <modelElement href="CS313PartA2.uml#_OzlQcJCJEeaFOKXs-yHBAw"/>
+      <visibility xmi:id="_PKvzRJCJEeaFOKXs-yHBAw" label="+"/>
+      <cardinality xmi:id="_PKvzRZCJEeaFOKXs-yHBAw" label="1" max="1" min="1"/>
+      <type xmi:id="_PKvzRpCJEeaFOKXs-yHBAw" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_PKvzR5CJEeaFOKXs-yHBAw" name="accountNo">
+      <modelElement href="CS313PartA2.uml#_Ozl3gJCJEeaFOKXs-yHBAw"/>
+      <visibility xmi:id="_PKvzSJCJEeaFOKXs-yHBAw" label="+"/>
+      <cardinality xmi:id="_PKvzSZCJEeaFOKXs-yHBAw" label="1" max="1" min="1"/>
+      <type xmi:id="_PKvzSpCJEeaFOKXs-yHBAw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_PKvzS5CJEeaFOKXs-yHBAw" name="accountHolder">
+      <modelElement href="CS313PartA2.uml#_Ozl3gZCJEeaFOKXs-yHBAw"/>
+      <visibility xmi:id="_PKvzTJCJEeaFOKXs-yHBAw" label="+"/>
+      <cardinality xmi:id="_PKvzTZCJEeaFOKXs-yHBAw" label="1" max="1" min="1"/>
+      <type xmi:id="_PKvzTpCJEeaFOKXs-yHBAw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_PKvzT5CJEeaFOKXs-yHBAw" name="interest">
+      <modelElement href="CS313PartA2.uml#_Ozl3gpCJEeaFOKXs-yHBAw"/>
+      <visibility xmi:id="_PKvzUJCJEeaFOKXs-yHBAw" label="+"/>
+      <cardinality xmi:id="_PKvzUZCJEeaFOKXs-yHBAw" label="1" max="1" min="1"/>
+      <type xmi:id="_PKvzUpCJEeaFOKXs-yHBAw" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_PKvzU5CJEeaFOKXs-yHBAw" name="printBalance">
+      <modelElement href="CS313PartA2.uml#_OzLn0ZCJEeaFOKXs-yHBAw"/>
+      <visibility xmi:id="_PKvzVJCJEeaFOKXs-yHBAw" label="+"/>
+      <cardinality xmi:id="_PKvzVZCJEeaFOKXs-yHBAw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_PKvzVpCJEeaFOKXs-yHBAw" name="deposit">
+      <modelElement href="CS313PartA2.uml#_OzMO4JCJEeaFOKXs-yHBAw"/>
+      <visibility xmi:id="_PKvzV5CJEeaFOKXs-yHBAw" label="+"/>
+      <cardinality xmi:id="_PKvzWJCJEeaFOKXs-yHBAw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_PKvzWZCJEeaFOKXs-yHBAw">
+        <modelElement href="CS313PartA2.uml#_OzM18JCJEeaFOKXs-yHBAw"/>
+        <type xmi:id="_PKvzWpCJEeaFOKXs-yHBAw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_PKvzW5CJEeaFOKXs-yHBAw" name="value">
+        <modelElement href="CS313PartA2.uml#_OzMO4ZCJEeaFOKXs-yHBAw"/>
+        <cardinality xmi:id="_PKvzXJCJEeaFOKXs-yHBAw" label="1" max="1" min="1"/>
+        <type xmi:id="_PKvzXZCJEeaFOKXs-yHBAw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_PKvzXpCJEeaFOKXs-yHBAw" name="withdraw">
+      <modelElement href="CS313PartA2.uml#_OzM18ZCJEeaFOKXs-yHBAw"/>
+      <visibility xmi:id="_PKvzX5CJEeaFOKXs-yHBAw" label="+"/>
+      <cardinality xmi:id="_PKvzYJCJEeaFOKXs-yHBAw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_PKvzYZCJEeaFOKXs-yHBAw">
+        <modelElement href="CS313PartA2.uml#_OzM185CJEeaFOKXs-yHBAw"/>
+        <type xmi:id="_PKvzYpCJEeaFOKXs-yHBAw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_PKvzY5CJEeaFOKXs-yHBAw" name="value">
+        <modelElement href="CS313PartA2.uml#_OzM18pCJEeaFOKXs-yHBAw"/>
+        <cardinality xmi:id="_PKvzZJCJEeaFOKXs-yHBAw" label="1" max="1" min="1"/>
+        <type xmi:id="_PKvzZZCJEeaFOKXs-yHBAw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

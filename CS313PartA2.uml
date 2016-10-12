@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_OniYgJCJEeaFOKXs-yHBAw" name="CS313PartA2">
+    <eAnnotations xmi:id="_OtUQYJCJEeaFOKXs-yHBAw" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_OtUQYZCJEeaFOKXs-yHBAw" source="codegen">
+        <details xmi:id="_OtUQYpCJEeaFOKXs-yHBAw" key="codegenDirectory" value="/CS313PartA/src"/>
+        <details xmi:id="_O2ezcJCJEeaFOKXs-yHBAw" key="AssociatedSourceCode" value="/CS313PartA/src/Account.java;3524977573/1;/CS313PartA/src/Current.java;1902673349/1;/CS313PartA/src/Saver.java;3575748894/1;/CS313PartA/src/StandingOrder.java;4035749987/1;/CS313PartA/src/Student.java;1772228373/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_OzKZsJCJEeaFOKXs-yHBAw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_OzKZsZCJEeaFOKXs-yHBAw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_OzLAwJCJEeaFOKXs-yHBAw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_OzLAwZCJEeaFOKXs-yHBAw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_OzLAwpCJEeaFOKXs-yHBAw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_OzLAw5CJEeaFOKXs-yHBAw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_OzLAxJCJEeaFOKXs-yHBAw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_OzLAxZCJEeaFOKXs-yHBAw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_OzLn0JCJEeaFOKXs-yHBAw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_OzAosJCJEeaFOKXs-yHBAw" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_OzBPwJCJEeaFOKXs-yHBAw" name="util">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_OzgX8JCJEeaFOKXs-yHBAw" name="Set"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_OzhmEJCJEeaFOKXs-yHBAw" name="HashSet"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_OzJyoJCJEeaFOKXs-yHBAw" name="Account">
+      <ownedAttribute xmi:id="_OzlQcJCJEeaFOKXs-yHBAw" name="balance">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Ozl3gJCJEeaFOKXs-yHBAw" name="accountNo">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Ozl3gZCJEeaFOKXs-yHBAw" name="accountHolder">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Ozl3gpCJEeaFOKXs-yHBAw" name="interest">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_OzLn0ZCJEeaFOKXs-yHBAw" name="printBalance"/>
+      <ownedOperation xmi:id="_OzMO4JCJEeaFOKXs-yHBAw" name="deposit">
+        <ownedParameter xmi:id="_OzMO4ZCJEeaFOKXs-yHBAw" name="value">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OzM18JCJEeaFOKXs-yHBAw" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OzM18ZCJEeaFOKXs-yHBAw" name="withdraw">
+        <ownedParameter xmi:id="_OzM18pCJEeaFOKXs-yHBAw" name="value">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OzM185CJEeaFOKXs-yHBAw" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_OzOrIJCJEeaFOKXs-yHBAw" name="Current">
+      <generalization xmi:id="_aqgbIJCJEeaFOKXs-yHBAw" general="_OzJyoJCJEeaFOKXs-yHBAw"/>
+      <ownedOperation xmi:id="_OzfJ0JCJEeaFOKXs-yHBAw" name="transfer">
+        <ownedParameter xmi:id="_Ozfw4JCJEeaFOKXs-yHBAw" name="value">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Ozfw4ZCJEeaFOKXs-yHBAw" name="recipient" type="_OzJyoJCJEeaFOKXs-yHBAw"/>
+        <ownedParameter xmi:id="_Ozfw4pCJEeaFOKXs-yHBAw" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_OzP5QJCJEeaFOKXs-yHBAw" name="Saver">
+      <generalization xmi:id="_a9mWQJCJEeaFOKXs-yHBAw" general="_OzJyoJCJEeaFOKXs-yHBAw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_OzQgUJCJEeaFOKXs-yHBAw" name="StandingOrder">
+      <ownedAttribute xmi:id="_OzmekJCJEeaFOKXs-yHBAw" name="daysTillPayment">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OzmekZCJEeaFOKXs-yHBAw" name="student" type="_OzS8kJCJEeaFOKXs-yHBAw" association="_OznsspCJEeaFOKXs-yHBAw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OznFoJCJEeaFOKXs-yHBAw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OznFoZCJEeaFOKXs-yHBAw" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OzoTwJCJEeaFOKXs-yHBAw" name="amount">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_OzS8kJCJEeaFOKXs-yHBAw" name="Student">
+      <generalization xmi:id="_ae19sJCJEeaFOKXs-yHBAw" general="_OzJyoJCJEeaFOKXs-yHBAw"/>
+      <ownedAttribute xmi:id="_OznFopCJEeaFOKXs-yHBAw" name="standingOrder" type="_OzQgUJCJEeaFOKXs-yHBAw" association="_OznsspCJEeaFOKXs-yHBAw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OznssJCJEeaFOKXs-yHBAw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OznssZCJEeaFOKXs-yHBAw" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_OzTjoJCJEeaFOKXs-yHBAw" name="createSO">
+        <ownedParameter xmi:id="_OzTjoZCJEeaFOKXs-yHBAw" name="period">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OzTjopCJEeaFOKXs-yHBAw" name="performSO">
+        <ownedParameter xmi:id="_OzUKsJCJEeaFOKXs-yHBAw" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_OzjbQJCJEeaFOKXs-yHBAw" name="transfer">
+        <ownedParameter xmi:id="_OzjbQZCJEeaFOKXs-yHBAw" name="amount">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_OzjbQpCJEeaFOKXs-yHBAw" name="recipient" type="_OzJyoJCJEeaFOKXs-yHBAw"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_OznsspCJEeaFOKXs-yHBAw" name="" memberEnd="_OznFopCJEeaFOKXs-yHBAw _OzmekZCJEeaFOKXs-yHBAw"/>
+    <profileApplication xmi:id="_OtU3cJCJEeaFOKXs-yHBAw">
+      <eAnnotations xmi:id="_OtU3cZCJEeaFOKXs-yHBAw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_OtU3cpCJEeaFOKXs-yHBAw" base_Package="_OniYgJCJEeaFOKXs-yHBAw">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:Reference xmi:id="_Ozg_AJCJEeaFOKXs-yHBAw" base_Element="_OzgX8JCJEeaFOKXs-yHBAw"/>
+  <UMLLabProfile:Reference xmi:id="_OziNIJCJEeaFOKXs-yHBAw" base_Element="_OzhmEJCJEeaFOKXs-yHBAw"/>
+</xmi:XMI>
