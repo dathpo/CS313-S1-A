@@ -12,13 +12,7 @@ public class StandingOrder {
       return this.daysTillPayment;
    }
    
-   /**
-    * <pre>
-    *           0..*     0..*
-    * StandingOrder ------------------------- Student
-    *           standingOrder        &gt;       student
-    * </pre>
-    */
+ 
    private Set<Student> student;
    
    public Set<Student> getStudent() {
