@@ -6,7 +6,11 @@
  *
  */
 public class Current extends Account {
-   public boolean transfer(double value, Account recipient) {
+   public Current(int accNo, String accHolder) {
+		super(accNo, accHolder);
+	}
+
+public boolean transfer(double value, Account recipient) {
       // TODO implement this operation
       throw new UnsupportedOperationException("not implemented");
    }

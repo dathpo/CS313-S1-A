@@ -6,4 +6,8 @@
  *
  */
 public class Saver extends Account {
+
+	public Saver(int accNo, String accHolder) {
+		super(accNo, accHolder);
+	}
 }

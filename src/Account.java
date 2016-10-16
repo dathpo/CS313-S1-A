@@ -7,6 +7,15 @@
  */
 public class Account {
 	private double balance;
+	private int accountNo;
+	private String accountHolder;
+	private double interest;
+	
+	
+	public Account(int accNo, String accHolder){
+		accountNo = accNo;
+		accountHolder = accHolder;
+	}
 
 	public void setBalance(double value) {
 		this.balance = value;
@@ -15,28 +24,6 @@ public class Account {
 	public double getBalance() {
 		return this.balance;
 	}
-
-	private int accountNo;
-
-	public void setAccountNo(int value) {
-		this.accountNo = value;
-	}
-
-	public int getAccountNo() {
-		return this.accountNo;
-	}
-
-	private String accountHolder;
-
-	public void setAccountHolder(String name) {
-		this.accountHolder = name;
-	}
-
-	public String getAccountHolder() {
-		return this.accountHolder;
-	}
-
-	private double interest;
 
 	public void setInterest(double rate) {
 		this.interest = rate;
@@ -47,18 +34,20 @@ public class Account {
 	}
 
 	public void printBalance() {
-		// TODO implement this operation
-		throw new UnsupportedOperationException("not implemented");
+		System.out.println(balance);
 	}
 
 	public boolean deposit(double value) {
-		// TODO implement this operation
-		throw new UnsupportedOperationException("not implemented");
+		balance += value;
+		return true;
 	}
 
 	public boolean withdraw(double value) {
-		// TODO implement this operation
-		throw new UnsupportedOperationException("not implemented");
+		if(balance >= value){
+			balance -= value;
+			return true;
+		}
+		return false;
 	}
 
 }
