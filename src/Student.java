@@ -1,23 +1,11 @@
-import java.util.Set;
-import java.util.HashSet;
-
+/**
+ * This class is the 
+ * 
+ * @author Liam
+ *
+ */
 public class Student extends Account {
-   /**
-    * <pre>
-    *           0..*     0..*
-    * Student ------------------------- StandingOrder
-    *           student        &lt;       standingOrder
-    * </pre>
-    */
-   private Set<StandingOrder> standingOrder;
-   
-   public Set<StandingOrder> getStandingOrder() {
-      if (this.standingOrder == null) {
-         this.standingOrder = new HashSet<StandingOrder>();
-      }
-      return this.standingOrder;
-   }
-   
+
    public void transfer(double amount, Account recipient) {
       // TODO implement this operation
       throw new UnsupportedOperationException("not implemented");

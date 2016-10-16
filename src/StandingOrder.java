@@ -1,6 +1,11 @@
 import java.util.Set;
 import java.util.HashSet;
-
+/**
+ * This is a standing order class, will be used to create and store the details of specific standing orders
+ * 
+ * @author Liam
+ *
+ */
 public class StandingOrder {
    private int daysTillPayment;
    
