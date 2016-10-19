@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_QrYGAJYPEeaRMJPWH8SUJQ" name="CS313_Part_A">
+    <eAnnotations xmi:id="_Q0p90JYPEeaRMJPWH8SUJQ" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_Q0qk4JYPEeaRMJPWH8SUJQ" source="codegen">
+        <details xmi:id="_Q0qk4ZYPEeaRMJPWH8SUJQ" key="codegenDirectory" value="/CS313 Part A/src"/>
+        <details xmi:id="_RcINgJYPEeaRMJPWH8SUJQ" key="AssociatedSourceCode" value="/CS313 Part A/src/Student.java;1748975146/1;/CS313 Part A/src/Current.java;3189841835/1;/CS313 Part A/src/Driver.java;1520793900/1;/CS313 Part A/src/RunnableDeposit.java;2822425926/1;/CS313 Part A/src/RunnablePrintBalance.java;1809614170/1;/CS313 Part A/src/RunnableTransfer.java;3867931167/1;/CS313 Part A/src/RunnableWithdraw.java;619544700/1;/CS313 Part A/src/Saver.java;3535068577/1;/CS313 Part A/src/Account.java;3422302889/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_RB-oIJYPEeaRMJPWH8SUJQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_RB_PMJYPEeaRMJPWH8SUJQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_RB_PMZYPEeaRMJPWH8SUJQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_RB_PMpYPEeaRMJPWH8SUJQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_RB_PM5YPEeaRMJPWH8SUJQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_RB_PNJYPEeaRMJPWH8SUJQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_RB_PNZYPEeaRMJPWH8SUJQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_RB_PNpYPEeaRMJPWH8SUJQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_RB_2QJYPEeaRMJPWH8SUJQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_RB5IkJYPEeaRMJPWH8SUJQ" name="Student">
+      <ownedComment xmi:id="_RDPzcJYPEeaRMJPWH8SUJQ">
+        <body>This class is the student account type and has the addition features of a&#xD;
+standing order functionality and transfer&#xD;
+&#xD;
+@author&#xD;
+ *</body>
+      </ownedComment>
+      <generalization xmi:id="_RC4nEZYPEeaRMJPWH8SUJQ" general="_RCT_UJYPEeaRMJPWH8SUJQ"/>
+      <ownedAttribute xmi:id="_RC-tsJYPEeaRMJPWH8SUJQ" name="standingOrderAmount" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_RC_UwJYPEeaRMJPWH8SUJQ" name="daysTillPayment">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:id="_RC2x4JYPEeaRMJPWH8SUJQ" client="_RB5IkJYPEeaRMJPWH8SUJQ" supplier="_RCPt4JYPEeaRMJPWH8SUJQ" contract="_RCPt4JYPEeaRMJPWH8SUJQ"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RDJFwJYPEeaRMJPWH8SUJQ" name="Student" specification="_RCBrcJYPEeaRMJPWH8SUJQ">
+        <ownedParameter xmi:id="_RDJFwZYPEeaRMJPWH8SUJQ" name="accNo">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_RDJFwpYPEeaRMJPWH8SUJQ" name="accHolder">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_RDJFw5YPEeaRMJPWH8SUJQ" type="_RB5IkJYPEeaRMJPWH8SUJQ" direction="return"/>
+        <language>java</language>
+        <body>super(accNo, accHolder);&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RDMJEJYPEeaRMJPWH8SUJQ" name="transfer" specification="_RC4AAJYPEeaRMJPWH8SUJQ">
+        <ownedParameter xmi:id="_RDMJEZYPEeaRMJPWH8SUJQ" name="value">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_RDMJEpYPEeaRMJPWH8SUJQ" name="recipient" type="_RCT_UJYPEeaRMJPWH8SUJQ"/>
+        <ownedParameter xmi:id="_RDMJE5YPEeaRMJPWH8SUJQ" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>if (value >= this.getBalance()) { &#xD;
+		recipient.deposit(value);&#xD;
+		this.withdraw(value);&#xD;
+		}&#xD;
+		return false;&#xD;
+		</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RDMwIJYPEeaRMJPWH8SUJQ" name="createStandingOrder" specification="_RCEHsJYPEeaRMJPWH8SUJQ">
+        <ownedParameter xmi:id="_RDMwIZYPEeaRMJPWH8SUJQ" name="value">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_RDMwIpYPEeaRMJPWH8SUJQ" name="period">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>this.standingOrderAmount = value;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_RCBrcJYPEeaRMJPWH8SUJQ" name="Student" method="_RDJFwJYPEeaRMJPWH8SUJQ">
+        <eAnnotations xmi:id="_RCCSgJYPEeaRMJPWH8SUJQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_RCCSgZYPEeaRMJPWH8SUJQ" key="create"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_RCBrcZYPEeaRMJPWH8SUJQ" name="accNo">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_RCBrcpYPEeaRMJPWH8SUJQ" name="accHolder">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_RCCSgpYPEeaRMJPWH8SUJQ" type="_RB5IkJYPEeaRMJPWH8SUJQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_RCEHsJYPEeaRMJPWH8SUJQ" name="createStandingOrder" method="_RDMwIJYPEeaRMJPWH8SUJQ">
+        <ownedParameter xmi:id="_RCEHsZYPEeaRMJPWH8SUJQ" name="value">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_RCEHspYPEeaRMJPWH8SUJQ" name="period">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_RC4AAJYPEeaRMJPWH8SUJQ" name="transfer" method="_RDMJEJYPEeaRMJPWH8SUJQ">
+        <ownedParameter xmi:id="_RC4AAZYPEeaRMJPWH8SUJQ" name="value">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_RC4AApYPEeaRMJPWH8SUJQ" name="recipient" type="_RCT_UJYPEeaRMJPWH8SUJQ"/>
+        <ownedParameter xmi:id="_RC4nEJYPEeaRMJPWH8SUJQ" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_RCHyEJYPEeaRMJPWH8SUJQ" name="Current">
+      <ownedComment xmi:id="_RDPzcZYPEeaRMJPWH8SUJQ">
+        <body>&#xD;
+This is the current account, it's only additional feature is the ability to&#xD;
+transfer&#xD;
+&#xD;
+@author&#xD;
+ *</body>
+      </ownedComment>
+      <generalization xmi:id="_RC6cQZYPEeaRMJPWH8SUJQ" general="_RCT_UJYPEeaRMJPWH8SUJQ"/>
+      <interfaceRealization xmi:id="_RC51MJYPEeaRMJPWH8SUJQ" client="_RCHyEJYPEeaRMJPWH8SUJQ" supplier="_RCPt4JYPEeaRMJPWH8SUJQ" contract="_RCPt4JYPEeaRMJPWH8SUJQ"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RDMwI5YPEeaRMJPWH8SUJQ" name="Current" specification="_RCJAMJYPEeaRMJPWH8SUJQ">
+        <ownedParameter xmi:id="_RDMwJJYPEeaRMJPWH8SUJQ" name="accNo">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_RDMwJZYPEeaRMJPWH8SUJQ" name="accHolder">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_RDMwJpYPEeaRMJPWH8SUJQ" type="_RCHyEJYPEeaRMJPWH8SUJQ" direction="return"/>
+        <language>java</language>
+        <body>super(accNo, accHolder);&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RDNXMJYPEeaRMJPWH8SUJQ" name="transfer" specification="_RC51MZYPEeaRMJPWH8SUJQ">
+        <ownedParameter xmi:id="_RDNXMZYPEeaRMJPWH8SUJQ" name="value">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_RDNXMpYPEeaRMJPWH8SUJQ" name="recipient" type="_RCT_UJYPEeaRMJPWH8SUJQ"/>
+        <ownedParameter xmi:id="_RDNXM5YPEeaRMJPWH8SUJQ" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>if (value >= this.getBalance()) {&#xD;
+			recipient.deposit(value);&#xD;
+			this.withdraw(value);&#xD;
+		}&#xD;
+		return false;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_RCJAMJYPEeaRMJPWH8SUJQ" name="Current" method="_RDMwI5YPEeaRMJPWH8SUJQ">
+        <eAnnotations xmi:id="_RCJAM5YPEeaRMJPWH8SUJQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_RCJANJYPEeaRMJPWH8SUJQ" key="create"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_RCJAMZYPEeaRMJPWH8SUJQ" name="accNo">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_RCJAMpYPEeaRMJPWH8SUJQ" name="accHolder">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_RCJANZYPEeaRMJPWH8SUJQ" type="_RCHyEJYPEeaRMJPWH8SUJQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_RC51MZYPEeaRMJPWH8SUJQ" name="transfer" method="_RDNXMJYPEeaRMJPWH8SUJQ">
+        <ownedParameter xmi:id="_RC51MpYPEeaRMJPWH8SUJQ" name="value">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_RC51M5YPEeaRMJPWH8SUJQ" name="recipient" type="_RCT_UJYPEeaRMJPWH8SUJQ"/>
+        <ownedParameter xmi:id="_RC6cQJYPEeaRMJPWH8SUJQ" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_RCLccJYPEeaRMJPWH8SUJQ" name="Driver">
+      <ownedComment xmi:id="_RDPzcpYPEeaRMJPWH8SUJQ">
+        <body>This class will be used to  create the objects and test all of the instances given in the spec for part A&#xD;
+&#xD;
+@author Liam Macpherson&#xD;
+ *</body>
+      </ownedComment>
+      <ownedOperation xmi:id="_RCMqkJYPEeaRMJPWH8SUJQ" name="main" isStatic="true">
+        <ownedParameter xmi:id="_RCMqkZYPEeaRMJPWH8SUJQ" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RCN4sJYPEeaRMJPWH8SUJQ" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_RCOfwZYPEeaRMJPWH8SUJQ" name="RunnableDeposit"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_RCPG0JYPEeaRMJPWH8SUJQ" name="RunnablePrintBalance"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_RCPt4JYPEeaRMJPWH8SUJQ" name="RunnableTransfer"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_RCQU8JYPEeaRMJPWH8SUJQ" name="RunnableWithdraw"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_RCQ8AJYPEeaRMJPWH8SUJQ" name="Saver">
+      <ownedComment xmi:id="_RDPzc5YPEeaRMJPWH8SUJQ">
+        <body>&#xD;
+The saver account type has no additional functionality&#xD;
+&#xD;
+@author&#xD;
+ *</body>
+      </ownedComment>
+      <generalization xmi:id="_RC7DUJYPEeaRMJPWH8SUJQ" general="_RCT_UJYPEeaRMJPWH8SUJQ"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RDNXNJYPEeaRMJPWH8SUJQ" name="Saver" specification="_RCSxMJYPEeaRMJPWH8SUJQ">
+        <ownedParameter xmi:id="_RDNXNZYPEeaRMJPWH8SUJQ" name="accNo">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_RDNXNpYPEeaRMJPWH8SUJQ" name="accHolder">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_RDNXN5YPEeaRMJPWH8SUJQ" type="_RCQ8AJYPEeaRMJPWH8SUJQ" direction="return"/>
+        <language>java</language>
+        <body>super(accNo, accHolder);&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_RCSxMJYPEeaRMJPWH8SUJQ" name="Saver" method="_RDNXNJYPEeaRMJPWH8SUJQ">
+        <eAnnotations xmi:id="_RCSxM5YPEeaRMJPWH8SUJQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_RCSxNJYPEeaRMJPWH8SUJQ" key="create"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_RCSxMZYPEeaRMJPWH8SUJQ" name="accNo">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_RCSxMpYPEeaRMJPWH8SUJQ" name="accHolder">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_RCSxNZYPEeaRMJPWH8SUJQ" type="_RCQ8AJYPEeaRMJPWH8SUJQ" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_RCT_UJYPEeaRMJPWH8SUJQ" name="Account">
+      <ownedComment xmi:id="_RDPzdJYPEeaRMJPWH8SUJQ">
+        <body>This class is the super class for all the account types. It gives them all&#xD;
+the basic functionality they will need for performing the specific situations&#xD;
+&#xD;
+@author &#xD;
+ *</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_RC_70JYPEeaRMJPWH8SUJQ" name="balance">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_RDAi4JYPEeaRMJPWH8SUJQ" name="accountNo" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_RDBJ8ZYPEeaRMJPWH8SUJQ" name="accountHolder" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_RDBxAZYPEeaRMJPWH8SUJQ" name="interest">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:id="_RC7qYJYPEeaRMJPWH8SUJQ" client="_RCT_UJYPEeaRMJPWH8SUJQ" supplier="_RCQU8JYPEeaRMJPWH8SUJQ" contract="_RCQU8JYPEeaRMJPWH8SUJQ"/>
+      <interfaceRealization xmi:id="_RC7qYZYPEeaRMJPWH8SUJQ" client="_RCT_UJYPEeaRMJPWH8SUJQ" supplier="_RCOfwZYPEeaRMJPWH8SUJQ" contract="_RCOfwZYPEeaRMJPWH8SUJQ"/>
+      <interfaceRealization xmi:id="_RC8RcJYPEeaRMJPWH8SUJQ" client="_RCT_UJYPEeaRMJPWH8SUJQ" supplier="_RCPG0JYPEeaRMJPWH8SUJQ" contract="_RCPG0JYPEeaRMJPWH8SUJQ"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RDN-QJYPEeaRMJPWH8SUJQ" name="Account" specification="_RCV0gJYPEeaRMJPWH8SUJQ">
+        <ownedParameter xmi:id="_RDN-QZYPEeaRMJPWH8SUJQ" name="accNo">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_RDN-QpYPEeaRMJPWH8SUJQ" name="accHolder">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_RDN-Q5YPEeaRMJPWH8SUJQ" type="_RCT_UJYPEeaRMJPWH8SUJQ" direction="return"/>
+        <language>java</language>
+        <body>balance = 0.0;&#xD;
+		accountNo = accNo;&#xD;
+		accountHolder = accHolder;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RDN-RJYPEeaRMJPWH8SUJQ" name="getAccNo" specification="_RCXCoJYPEeaRMJPWH8SUJQ">
+        <ownedParameter xmi:id="_RDN-RZYPEeaRMJPWH8SUJQ" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>return this.accountNo;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RDOlUJYPEeaRMJPWH8SUJQ" name="getAccHolder" specification="_RCXCopYPEeaRMJPWH8SUJQ">
+        <ownedParameter xmi:id="_RDOlUZYPEeaRMJPWH8SUJQ" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>return this.accountHolder;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RDOlUpYPEeaRMJPWH8SUJQ" name="printBalance" specification="_RCXpsZYPEeaRMJPWH8SUJQ">
+        <language>java</language>
+        <body>System.out.println(balance);&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RDOlU5YPEeaRMJPWH8SUJQ" name="deposit" specification="_RCYQwJYPEeaRMJPWH8SUJQ">
+        <ownedParameter xmi:id="_RDOlVJYPEeaRMJPWH8SUJQ" name="value">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_RDOlVZYPEeaRMJPWH8SUJQ" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>if (value > 0) {&#xD;
+			balance += value;&#xD;
+			return true;&#xD;
+		}&#xD;
+		return false;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RDPMYJYPEeaRMJPWH8SUJQ" name="withdraw" specification="_RCY30JYPEeaRMJPWH8SUJQ">
+        <ownedParameter xmi:id="_RDPMYZYPEeaRMJPWH8SUJQ" name="value">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_RDPMYpYPEeaRMJPWH8SUJQ" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>if(balance >= value){&#xD;
+			balance -= value;&#xD;
+			return true;&#xD;
+		}&#xD;
+		return false;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_RCV0gJYPEeaRMJPWH8SUJQ" name="Account" method="_RDN-QJYPEeaRMJPWH8SUJQ">
+        <eAnnotations xmi:id="_RCWbkZYPEeaRMJPWH8SUJQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_RCWbkpYPEeaRMJPWH8SUJQ" key="create"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_RCV0gZYPEeaRMJPWH8SUJQ" name="accNo">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_RCWbkJYPEeaRMJPWH8SUJQ" name="accHolder">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_RCWbk5YPEeaRMJPWH8SUJQ" type="_RCT_UJYPEeaRMJPWH8SUJQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_RCXCoJYPEeaRMJPWH8SUJQ" name="getAccNo" method="_RDN-RJYPEeaRMJPWH8SUJQ">
+        <ownedParameter xmi:id="_RCXCoZYPEeaRMJPWH8SUJQ" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_RCXCopYPEeaRMJPWH8SUJQ" name="getAccHolder" method="_RDOlUJYPEeaRMJPWH8SUJQ">
+        <ownedParameter xmi:id="_RCXpsJYPEeaRMJPWH8SUJQ" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_RCXpsZYPEeaRMJPWH8SUJQ" name="printBalance" method="_RDOlUpYPEeaRMJPWH8SUJQ"/>
+      <ownedOperation xmi:id="_RCYQwJYPEeaRMJPWH8SUJQ" name="deposit" method="_RDOlU5YPEeaRMJPWH8SUJQ">
+        <ownedParameter xmi:id="_RCYQwZYPEeaRMJPWH8SUJQ" name="value">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_RCYQwpYPEeaRMJPWH8SUJQ" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_RCY30JYPEeaRMJPWH8SUJQ" name="withdraw" method="_RDPMYJYPEeaRMJPWH8SUJQ">
+        <ownedParameter xmi:id="_RCY30ZYPEeaRMJPWH8SUJQ" name="value">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_RCciMJYPEeaRMJPWH8SUJQ" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <profileApplication xmi:id="_Q0saEJYPEeaRMJPWH8SUJQ">
+      <eAnnotations xmi:id="_Q0vdYJYPEeaRMJPWH8SUJQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_Q0xSkJYPEeaRMJPWH8SUJQ" base_Package="_QrYGAJYPEeaRMJPWH8SUJQ">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_RCNRoJYPEeaRMJPWH8SUJQ" base_Element="_RCMqkJYPEeaRMJPWH8SUJQ"/>
+  <UMLLabProfile:Array xmi:id="_RCOfwJYPEeaRMJPWH8SUJQ" base_Element="_RCMqkZYPEeaRMJPWH8SUJQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_RDBJ8JYPEeaRMJPWH8SUJQ" base_Element="_RDAi4JYPEeaRMJPWH8SUJQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_RDBxAJYPEeaRMJPWH8SUJQ" base_Element="_RDBJ8ZYPEeaRMJPWH8SUJQ"/>
+</xmi:XMI>
