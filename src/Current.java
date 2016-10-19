@@ -1,18 +1,22 @@
 /**
  * 
- * This is the current account, it's only additional feature is the ability to transfer
+ * This is the current account, it's only additional feature is the ability to
+ * transfer
  * 
- * @author 
+ * @author
  *
  */
-public class Current extends Account {
-   public Current(int accNo, String accHolder) {
+public class Current extends Account implements RunnableTransfer {
+	public Current(int accNo, String accHolder) {
 		super(accNo, accHolder);
 	}
 
-public boolean transfer(double value, Account recipient) {
-      // TODO implement this operation
-      throw new UnsupportedOperationException("not implemented");
-   }
-   
-   }
+	public boolean transfer(double value, Account recipient) {
+		if (value >= this.getBalance()) {
+			recipient.deposit(value);
+			this.withdraw(value);
+		}
+		return false;
+	}
+
+}

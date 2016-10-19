@@ -5,25 +5,36 @@
  * @author
  *
  */
-public class Student extends Account {
+public class Student extends Account implements RunnableTransfer {
 
+	private double standingOrderAmount;
+	private int daysTillPayment;
 	public Student(int accNo, String accHolder) {
 		super(accNo, accHolder);
 	}
 
-	public void transfer(double amount, Account recipient) {
-		// TODO implement this operation
-		throw new UnsupportedOperationException("not implemented");
+	public boolean transfer(double value, Account recipient) {
+		if (value >= this.getBalance()) { 
+		recipient.deposit(value);
+		this.withdraw(value);
+		}
+		return false;
+		}
+	
+	public void setDaysTillPayment(int value) {
+		this.daysTillPayment = value;
 	}
 
-	public void createSO(int period) {
-		// TODO implement this operation
-		throw new UnsupportedOperationException("not implemented");
+	public int getDaysTillPayment() {
+		return this.daysTillPayment;
 	}
 
-	public boolean performSO() {
-		// TODO implement this operation
-		throw new UnsupportedOperationException("not implemented");
+	public void createStandingOrder(double value, int period) {
+		this.standingOrderAmount = value;
 	}
-
+	
+	public double getStandingOrderAmount() {
+		return this.standingOrderAmount;
+	}
+	
 }

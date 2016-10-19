@@ -5,14 +5,14 @@
  * @author 
  *
  */
-public class Account {
+public class Account implements RunnableWithdraw,  RunnableDeposit,  RunnablePrintBalance {
 	private double balance;
 	private int accountNo;
 	private String accountHolder;
 	private double interest;
-	
-	
-	public Account(int accNo, String accHolder){
+		
+	public Account(int accNo, String accHolder) {
+		balance = 0.0;
 		accountNo = accNo;
 		accountHolder = accHolder;
 	}
@@ -33,13 +33,24 @@ public class Account {
 		return this.interest;
 	}
 
+	public int getAccNo() {
+		return this.accountNo;
+	}
+
+	public String getAccHolder() {
+		return this.accountHolder;
+	}
+
 	public void printBalance() {
 		System.out.println(balance);
 	}
 
 	public boolean deposit(double value) {
-		balance += value;
-		return true;
+		if (value > 0) {
+			balance += value;
+			return true;
+		}
+		return false;
 	}
 
 	public boolean withdraw(double value) {
