@@ -2,10 +2,10 @@
  * This class is the student account type and has the addition features of a
  * standing order functionality and transfer
  * 
- * @author
+ * @Group5
  *
  */
-public class Student extends Account implements RunnableTransfer {
+public class Student extends Account implements Runnable {
 
 	private double standingOrderAmount;
 	private int daysTillPayment;

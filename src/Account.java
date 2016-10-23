@@ -2,10 +2,10 @@
  * This class is the super class for all the account types. It gives them all
  * the basic functionality they will need for performing the specific situations
  * 
- * @author 
+ * @Group5 
  *
  */
-public class Account implements RunnableWithdraw,  RunnableDeposit,  RunnablePrintBalance {
+public class Account implements Runnable {
 	private double balance;
 	private int accountNo;
 	private String accountHolder;
@@ -47,6 +47,7 @@ public class Account implements RunnableWithdraw,  RunnableDeposit,  RunnablePri
 
 	public boolean deposit(double value) {
 		if (value > 0) {
+			System.out.println(accountHolder + " has deposited £" + value);
 			balance += value;
 			return true;
 		}
@@ -59,6 +60,10 @@ public class Account implements RunnableWithdraw,  RunnableDeposit,  RunnablePri
 			return true;
 		}
 		return false;
+	}
+
+	public void run() {
+		
 	}
 
 }

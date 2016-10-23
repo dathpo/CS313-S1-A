@@ -3,10 +3,10 @@
  * This is the current account, it's only additional feature is the ability to
  * transfer
  * 
- * @author
+ * @Group5
  *
  */
-public class Current extends Account implements RunnableTransfer {
+public class Current extends Account {
 	public Current(int accNo, String accHolder) {
 		super(accNo, accHolder);
 	}

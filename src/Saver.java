@@ -2,7 +2,7 @@
  * 
  * The saver account type has no additional functionality
  * 
- * @author
+ * @Group5
  *
  */
 public class Saver extends Account {

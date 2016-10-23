@@ -1,3 +1,7 @@
 
-public interface RunnableWithdraw {
+public class RunnableWithdraw implements Runnable {
+
+	public void run() {
+		
+	}
 }
