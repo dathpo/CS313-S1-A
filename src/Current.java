@@ -12,7 +12,7 @@ public class Current extends Account {
 	}
 
 	public boolean transfer(double value, Account recipient) {
-		if (value >= this.getBalance()) {
+		if (value >= this.printBalance()) {
 			recipient.deposit(value);
 			this.withdraw(value);
 		}

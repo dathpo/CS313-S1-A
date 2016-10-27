@@ -14,7 +14,7 @@ public class Student extends Account implements Runnable {
 	}
 
 	public boolean transfer(double value, Account recipient) {
-		if (value >= this.getBalance()) { 
+		if (value >= this.printBalance()) { 
 		recipient.deposit(value);
 		this.withdraw(value);
 		}

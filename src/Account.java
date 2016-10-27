@@ -19,14 +19,17 @@ public class Account implements Runnable {
 
 	public void setBalance(double value) {
 		this.balance = value;
+		System.out.println();
 	}
 
-	public double getBalance() {
+	public double printBalance() {
+		System.out.println("Account Holder: " + getAccHolder() + ", Account #: " + getAccNo() + ", Balance: £" + this.balance);
 		return this.balance;
 	}
 
 	public void setInterest(double rate) {
 		this.interest = rate;
+		
 	}
 
 	public double getInterest() {
@@ -34,15 +37,12 @@ public class Account implements Runnable {
 	}
 
 	public int getAccNo() {
+		System.out.println("Account Holder: " + this.accountHolder);
 		return this.accountNo;
 	}
 
 	public String getAccHolder() {
 		return this.accountHolder;
-	}
-
-	public void printBalance() {
-		System.out.println(balance);
 	}
 
 	public boolean deposit(double value) {
