@@ -1,3 +1,5 @@
+import java.util.concurrent.TimeUnit;
+
 /**
  * This class is the student account type and has the addition features of a
  * standing order functionality and transfer
@@ -14,12 +16,26 @@ public class Student extends Account implements Runnable {
 	}
 
 	public boolean transfer(double value, Account recipient) {
-		if (value >= this.printBalance()) { 
-		recipient.deposit(value);
-		this.withdraw(value);
+		cashLock.lock();
+		try {
+			if (value <= this.getBalance()) { 
+				if (!stillWaiting) {
+					Thread.currentThread().interrupt();
+					stillWaiting = cashAvailableCondition.await(10, TimeUnit.SECONDS);
+				}
+				recipient.deposit(value);
+				this.withdraw(value);
+				return true;
+			}
+		} catch (InterruptedException e) {
+			e.printStackTrace();
 		}
+		finally {
+			cashLock.unlock();
+		}
+		System.out.println("There are insufficient funds available in the account to transfer the amount selected.");
 		return false;
-		}
+	}
 	
 	public void setDaysTillPayment(int value) {
 		this.daysTillPayment = value;
