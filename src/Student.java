@@ -45,8 +45,13 @@ public class Student extends Account implements Runnable {
 		return this.daysTillPayment;
 	}
 
-	public void createStandingOrder(double value, int period) {
-		this.standingOrderAmount = value;
+	public boolean createStandingOrder(double value, int period) {
+		if(value>this.getBalance()){
+			return false;
+		}
+		standingOrderAmount += value;
+	    this.withdraw(value);
+	    return true;
 	}
 	
 	public double getStandingOrderAmount() {
