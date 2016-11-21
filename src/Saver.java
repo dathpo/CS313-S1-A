@@ -2,12 +2,12 @@
  * 
  * The saver account type has no additional functionality
  * 
- * @Group5
- *
+ * @Group6
  */
+
 public class Saver extends Account {
 
-	public Saver(int accNo, String accHolder) {
-		super(accNo, accHolder);
+	public Saver(int accNo, String accName) {
+		super(accNo, accName);
 	}
 }
