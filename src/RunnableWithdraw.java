@@ -15,7 +15,7 @@ public class RunnableWithdraw implements Runnable {
 			Thread.sleep(DELAY);
 		}
 		catch (InterruptedException e) {
-			System.out.println("Timeout");
+			System.out.println("Thread with ID " + Thread.currentThread().getId() + ": There are no impending balance-increasing operations, the thread has timed out.");
 		}
 		
 	}

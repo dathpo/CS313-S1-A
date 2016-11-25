@@ -6,23 +6,25 @@ public class DriverTest {
 		a1.setBalance(0);
 		a2.setBalance(0);
 		RunnablePrintBalance rpb = new RunnablePrintBalance(a1);
-		RunnableDeposit rd1 = new RunnableDeposit(a1, 40);
-		RunnableWithdraw rw = new RunnableWithdraw(a1, 50);
-		RunnableDeposit rd2 = new RunnableDeposit(a1, 20);
-		RunnableTransfer rt = new RunnableTransfer(a1, a2, 10);		
+		RunnableDeposit rd1 = new RunnableDeposit(a1, -40);
+		RunnableWithdraw rw1 = new RunnableWithdraw(a1, -50);
+		RunnableDeposit rd2 = new RunnableDeposit(a1, 0);
+		RunnableTransfer rt = new RunnableTransfer(a1, a2, -10);		
+		RunnableWithdraw rw2 = new RunnableWithdraw(a1, 50);
 		
 		Thread rpbT = new Thread(rpb);
 		Thread rd1T = new Thread(rd1);
-		Thread rwT = new Thread(rw);
+		Thread rw1T = new Thread(rw1);
 		Thread rd2T = new Thread(rd2);
 		Thread rtT = new Thread(rt);
+		Thread rw2T = new Thread(rw2);
 		
 		rpbT.start();
 		rd1T.start();
-		rwT.start();
+		rw1T.start();
 		rd2T.start();
 		rtT.start();
-
+		rw2T.start();
 	}
 	
 }

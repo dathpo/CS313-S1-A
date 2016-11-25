@@ -12,12 +12,14 @@
 public class Driver5 {
 
 	public static void main(String args[]) {
+		System.out.println("Scenario #5");
+		System.out.println();
 		Account a5 = new Account(5, "Account #5");
 		Account a1 = new Account(1, "Account #1");
-		a5.setBalance(26.35);
-		a1.setBalance(135.61);
+		a5.setBalance(26.0);
+		a1.setBalance(135.0);
 		RunnableWithdraw rw = new RunnableWithdraw(a5, 50.0);
-		RunnableStandingOrder rso = new RunnableStandingOrder(a1, a5, 20, 1);
+		RunnableStandingOrder rso = new RunnableStandingOrder(a1, a5, 10, 4);
 		
 		Thread rwT = new Thread(rw);
 		Thread rsoT = new Thread(rso);

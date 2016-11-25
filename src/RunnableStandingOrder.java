@@ -1,28 +1,27 @@
 
 public class RunnableStandingOrder implements Runnable {
-	private static final int DELAY = 1;
+	private static final int DELAY = 1000;
 	private Account account;
 	private Account recipient;
 	private double value;
-	private int days;
+	private int occurrence;
 
-	public RunnableStandingOrder(Account a, Account r, double v, int d) {
+	public RunnableStandingOrder(Account a, Account r, double v, int o) {
 		account = a;
 		recipient = r;
 		value = v;
-		days = d;
+		occurrence = o;
 	}
 	
 	public void run() {
 		try {
-			for(;;){
-				Thread.sleep(3000);
-				account.createStandingOrder(recipient, value, days);
+			for(int i=0; i<occurrence; i++){
+				account.createStandingOrder(recipient, value, occurrence);
 				Thread.sleep(DELAY);
 			}
 		}
 		catch (InterruptedException e) {
-			System.out.println("Timeout");
+			System.out.println("Thread with ID " + Thread.currentThread().getId() + ": There are no impending balance-increasing operations, the thread has timed out.");
 		}
 		
 	}

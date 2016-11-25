@@ -10,8 +10,10 @@
 public class Driver3 {
 
 	public static void main(String args[]) {
+		System.out.println("Scenario #3");
+		System.out.println();
 		Account a3 = new Account(3, "Account #3");
-		a3.setBalance(252.53);
+		a3.setBalance(252.0);
 		RunnableDeposit rd = new RunnableDeposit(a3, 100.0);
 		RunnableWithdraw rw = new RunnableWithdraw(a3, 50.0);
 		RunnablePrintBalance rpb = new RunnablePrintBalance(a3);

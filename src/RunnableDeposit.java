@@ -15,7 +15,7 @@ public class RunnableDeposit implements Runnable {
 			Thread.sleep(DELAY);
 		}
 		catch (InterruptedException e) {
-			System.out.println("Timeout");
+			System.out.println("Thread with ID " + Thread.currentThread().getId() + ": The thread has timed out.");	
 		}
 		
 	}

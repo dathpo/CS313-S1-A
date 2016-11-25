@@ -16,8 +16,7 @@ public class Account implements Runnable {
 	private String accountName;
 	private double interest;
 	
-	private double standingOrderAmount;
-	private int daysTillPayment;
+	private int standingOrderNumber = 1;
 	
 	public Lock cashLock;
 	public Condition cashAvailableCondition;
@@ -49,12 +48,13 @@ public class Account implements Runnable {
 
 	public void printBalance() throws InterruptedException {
 		cashLock.lock();
-		System.out.println("Thread with ID " + Thread.currentThread().getId() + ": Trying to print the balance...");
-		System.out.println("Thread with ID " + Thread.currentThread().getId() + ": Checking if all other impending operations are terminated...");
-		noImpendingOpsCondition.await(3, TimeUnit.SECONDS);
+		System.out.println("Thread with ID " + Thread.currentThread().getId() + " (PB): Trying to print the balance on " +getAccName()+ "...");
+		System.out.println("Thread with ID " + Thread.currentThread().getId() + " (PB): Checking for any possible concurrent balance-changing operations to have terminated...");
+		noImpendingOpsCondition.await(5, TimeUnit.SECONDS);
 		try {
-			System.out.println("Thread with ID " + Thread.currentThread().getId() + ": The balance on " + getAccName() + " is £" + getBalance() + ".");
-			stillWaiting = noImpendingOpsCondition.await(3, TimeUnit.SECONDS);			
+			System.out.println("Thread with ID " + Thread.currentThread().getId() + " (PB): There are no impending balance-changing operations.");
+			System.out.println("Thread with ID " + Thread.currentThread().getId() + " (PB): The balance on " + getAccName() + " is £" + getBalance() + ".");
+			stillWaiting = noImpendingOpsCondition.await(5, TimeUnit.SECONDS);			
 		} finally {
 			cashLock.unlock();
 		}
@@ -78,16 +78,16 @@ public class Account implements Runnable {
 
 	public void deposit(double value) throws InterruptedException {
 		cashLock.lock();
-		System.out.println("Thread with ID " + Thread.currentThread().getId() + ": Trying to deposit...");
+		System.out.println("Thread with ID " + Thread.currentThread().getId() + " (DE): Trying to deposit £" + value + " on " + getAccName() + "...");
 		try {
 			if (value > 0) {
 				balance += value;
-				System.out.println("Thread with ID " + Thread.currentThread().getId() + ": £" + value + " have been deposited on " + getAccName() + ".");
-				System.out.println("Thread with ID " + Thread.currentThread().getId() + ": The balance on " + getAccName() + " is now £" + getBalance() + ".");
+				System.out.println("Thread with ID " + Thread.currentThread().getId() + " (DE): £" + value + " have been deposited on " + getAccName() + ".");
+				System.out.println("Thread with ID " + Thread.currentThread().getId() + " (DE): The balance on " + getAccName() + " is now £" + getBalance() + ".");
 				cashAvailableCondition.signalAll();
 				noImpendingOpsCondition.signalAll();
 			} else {
-				System.out.println("The value must be above zero.");
+				System.out.println("Thread with ID " + Thread.currentThread().getId() + " (DE): The value must be above zero.");
 			}
 		} finally {
 			cashLock.unlock();
@@ -96,19 +96,25 @@ public class Account implements Runnable {
 
 	public void withdraw(double value) throws InterruptedException {
 		cashLock.lock();
-		System.out.println("Thread with ID " + Thread.currentThread().getId() + ": Trying to withdraw...");
+		System.out.println("Thread with ID " + Thread.currentThread().getId() + " (WI): Trying to withdraw £" + value + " from " + getAccName() + "...");
 		try {
-			while (balance < value) {
-				if (!stillWaiting) {
-					System.out.println("There are insufficient funds available in the account to withdraw the amount selected.");
-					Thread.currentThread().interrupt();
+			if (value > 0) {
+				while (balance < value) {
+					System.out.println("Thread with ID " + Thread.currentThread().getId() + " (WI): There are currently insufficient funds available in the account to withdraw the amount selected.");
+					System.out.println("Thread with ID " + Thread.currentThread().getId() + " (WI): Checking for any possible balance-increasing operations...");
+					if (!stillWaiting) {
+						Thread.currentThread().interrupt();
+					}
+					stillWaiting = cashAvailableCondition.await(2, TimeUnit.SECONDS);
 				}
-					stillWaiting = cashAvailableCondition.await(1, TimeUnit.SECONDS);
+				balance -= value;
+				System.out.println("Thread with ID " + Thread.currentThread().getId() + " (WI): £" + value + " have been withdrawn from " + getAccName() + ".");
+				System.out.println("Thread with ID " + Thread.currentThread().getId() + " (WI): The balance on " + getAccName() + " is now £" + getBalance() + ".");
+				noImpendingOpsCondition.signalAll();
 			}
-			balance -= value;
-			System.out.println("Thread with ID " + Thread.currentThread().getId() + ": £" + value + " have been withdrawn from " + getAccName() + ".");
-			System.out.println("Thread with ID " + Thread.currentThread().getId() + ": The balance on " + getAccName() + " is now £" + getBalance() + ".");
-			noImpendingOpsCondition.signalAll();
+			else {
+				System.out.println("Thread with ID " + Thread.currentThread().getId() + " (WI): The value must be above zero.");
+			}
 		} finally {
 			cashLock.unlock();
 		}
@@ -116,56 +122,71 @@ public class Account implements Runnable {
 	
 	public void transfer(double value, Account recipient) throws InterruptedException {
 		cashLock.lock();
-		System.out.println("Thread with ID " + Thread.currentThread().getId() + ": Trying to transfer...");
+		System.out.println("Thread with ID " + Thread.currentThread().getId() + " (TR): Trying to transfer £" + value + " from " + getAccName() + " to " + recipient.getAccName() + "...");
 		try {
+			if (value > 0) {
 			while (balance < value) {
+				System.out.println("Thread with ID " + Thread.currentThread().getId() + " (TR): There are currently insufficient funds available in the account to transfer the amount selected.");
+				System.out.println("Thread with ID " + Thread.currentThread().getId() + " (TR): Checking for any possible balance-increasing operations...");
 				if (!stillWaiting) {
-					System.out.println("There are insufficient funds available in the account to transfer the amount selected.");
 					Thread.currentThread().interrupt();
 				}
-					stillWaiting = cashAvailableCondition.await(1, TimeUnit.SECONDS);
+					stillWaiting = cashAvailableCondition.await(2, TimeUnit.SECONDS);
 			}
 			recipient.balance += value;
 			this.balance -= value;
-			System.out.println("Thread with ID " + Thread.currentThread().getId() + ": £" + value + " have been transferred from " + getAccName() + " to " + recipient.getAccName() + ".");
-			System.out.println("Thread with ID " + Thread.currentThread().getId() + ": The balance on " + getAccName() + " is now £" + getBalance() + ".");
-			System.out.println("Thread with ID " + Thread.currentThread().getId() + ": The balance on " + recipient.getAccName() + " is now £" + recipient.getBalance() + ".");
+			System.out.println("Thread with ID " + Thread.currentThread().getId() + " (TR): £" + value + " have been transferred from " + getAccName() + " to " + recipient.getAccName() + ".");
+			System.out.println("Thread with ID " + Thread.currentThread().getId() + " (TR): The balance on " + getAccName() + " is now £" + getBalance() + ".");
+			System.out.println("Thread with ID " + Thread.currentThread().getId() + " (TR): The balance on " + recipient.getAccName() + " is now £" + recipient.getBalance() + ".");
 			noImpendingOpsCondition.signalAll();
-		} finally {
-			cashLock.unlock();
-		}
-	}
-
-	public void setDaysTillPayment(int value) {
-		this.daysTillPayment = value;
-	}
-
-	public int getDaysTillPayment() {
-		return this.daysTillPayment;
-	}
-
-	public void createStandingOrder(Account recipient, double value, int days) throws InterruptedException {
-		cashLock.lock();
-		System.out.println("Thread with ID " + Thread.currentThread().getId() + ": Trying to create a standing order.");
-		try {
-			if (value < this.getBalance()) {
-				System.out.println("Thread with ID " + Thread.currentThread().getId() + ": A standing order of £"
-						+ value + " occuring every " + days + " days has been set up from " + getAccName() + " to "
-						+ recipient.getAccName() + ".");
-				standingOrderAmount += value;
-				this.withdraw(value);
-				System.out.println("Thread with ID " + Thread.currentThread().getId() + ": £" + value + " have been transferred from " + getAccName() + " to " + recipient.getAccName() + ".");
-				System.out.println("Thread with ID " + Thread.currentThread().getId() + ": The balance on " + getAccName() + " is now £" + getBalance() + ".");
-			} else {
-				System.out.println("The value must be above zero.");
+			}
+			else {
+				System.out.println("Thread with ID " + Thread.currentThread().getId() + " (TR): The value must be above zero.");
 			}
 		} finally {
 			cashLock.unlock();
 		}
 	}
 
-	public double getStandingOrderAmount() {
-		return this.standingOrderAmount;
+	public void createStandingOrder(Account recipient, double value, int occurrence) throws InterruptedException {
+		cashLock.lock();
+		if (getStandingOrderNumber() == 1) {
+			System.out.println("Thread with ID " + Thread.currentThread().getId() + " (SO): Trying to set up a standing order of £"
+					+ value + " occurring " + occurrence + " time(s) from " + getAccName() + " to "
+					+ recipient.getAccName() + "...");
+		}
+		try {
+			if (value > 0) {
+				while (balance < value) {
+					System.out.println("Thread with ID " + Thread.currentThread().getId() + " (SO): There are currently insufficient funds available in the account to set up the standing order.");
+					System.out.println("Thread with ID " + Thread.currentThread().getId() + " (SO): Checking for any possible balance-increasing operations...");
+					if (!stillWaiting) {
+						Thread.currentThread().interrupt();
+					}
+					stillWaiting = cashAvailableCondition.await(2, TimeUnit.SECONDS);
+				}
+				recipient.balance += value;
+				this.balance -= value;
+				if (getStandingOrderNumber() == 1) {System.out.println("Thread with ID " + Thread.currentThread().getId() + " (SO): A standing order of £"
+						+ value + " occurring " + occurrence + " time(s) has been set up from " + getAccName() + " to "
+						+ recipient.getAccName() + ".");
+				}
+				System.out.println("Thread with ID " + Thread.currentThread().getId() + " (SO): Standing order #" + getStandingOrderNumber() + " has been carried out: £" + value + " have been transferred from " + getAccName() + " to " + recipient.getAccName() + ".");
+				System.out.println("Thread with ID " + Thread.currentThread().getId() + " (SO): The balance on " + getAccName() + " is now £" + getBalance() + ".");
+				System.out.println("Thread with ID " + Thread.currentThread().getId() + " (SO): The balance on " + recipient.getAccName() + " is now £" + recipient.getBalance() + ".");
+				noImpendingOpsCondition.signalAll();
+				standingOrderNumber++;	
+			}
+			else {
+				System.out.println("Thread with ID " + Thread.currentThread().getId() + " (SO): The value must be above zero.");
+			}
+		} finally {
+			cashLock.unlock();
+		}
+	}
+
+	public int getStandingOrderNumber() {
+		return this.standingOrderNumber;
 	}
 
 	public void run() {

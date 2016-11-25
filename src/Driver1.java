@@ -9,8 +9,10 @@
 public class Driver1 {
 	
 	public static void main(String args[]) {
+		System.out.println("Scenario #1");
+		System.out.println();
 		Account a1 = new Account(1, "Account #1");
-		a1.setBalance(85.47);
+		a1.setBalance(85.0);
 		RunnablePrintBalance rpb1 = new RunnablePrintBalance(a1);
 		RunnablePrintBalance rpb2 = new RunnablePrintBalance(a1);
 
