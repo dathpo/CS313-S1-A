@@ -21,7 +21,7 @@ public class RunnableStandingOrder implements Runnable {
 			}
 		}
 		catch (InterruptedException e) {
-			System.out.println("Thread with ID " + Thread.currentThread().getId() + ": There are no impending balance-increasing operations, the thread has timed out.");
+			System.out.println("Thread with ID " + Thread.currentThread().getId() + " (SO): There are no impending balance-increasing operations, the thread has timed out.");
 		}
 		
 	}

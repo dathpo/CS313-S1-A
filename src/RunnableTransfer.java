@@ -17,7 +17,7 @@ public class RunnableTransfer implements Runnable {
 			Thread.sleep(DELAY);
 		}
 		catch (InterruptedException e) {
-			System.out.println("Thread with ID " + Thread.currentThread().getId() + ": There are no impending balance-increasing operations, the thread has timed out.");
+			System.out.println("Thread with ID " + Thread.currentThread().getId() + " (TR): There are no impending balance-increasing operations, the thread has timed out.");
 		}
 		
 	}

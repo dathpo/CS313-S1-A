@@ -13,7 +13,7 @@ public class RunnablePrintBalance implements Runnable {
 			Thread.sleep(DELAY);
 		}
 		catch (InterruptedException e) {
-			System.out.println("Thread with ID " + Thread.currentThread().getId() + ": The thread has timed out.");
+			System.out.println("Thread with ID " + Thread.currentThread().getId() + " (PB): The thread has timed out.");
 		}
 		
 	}
