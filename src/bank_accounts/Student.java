@@ -1,4 +1,4 @@
-import java.util.concurrent.TimeUnit;
+package bank_accounts;
 
 /**
  * This class is the student account type and has the addition features of a
@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
  * @Group6
  */
 
-public class Student extends Account implements Runnable {
+public class Student extends Account {
 
 	public Student(int accNo, String accName) {
 		super(accNo, accName);

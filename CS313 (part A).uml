@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_WpU8kLSXEealmOi8IymRlA" name="CS313__part_A_">
+    <eAnnotations xmi:id="_Wx0xQLSXEealmOi8IymRlA" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_Wx0xQbSXEealmOi8IymRlA" source="codegen">
+        <details xmi:id="_Wx0xQrSXEealmOi8IymRlA" key="codegenDirectory" value="/CS313 (part A)/src"/>
+        <details xmi:id="_XDPRYLSXEealmOi8IymRlA" key="AssociatedSourceCode" value="/CS313 (part A)/src/tests/DriverExample.java;637811898/1;/CS313 (part A)/src/bank_accounts/Current.java;3205130315/1;/CS313 (part A)/src/bank_accounts/Saver.java;1828292412/1;/CS313 (part A)/src/bank_accounts/Student.java;4264758184/1;/CS313 (part A)/src/runnables/RunnableDeposit.java;3263518685/1;/CS313 (part A)/src/runnables/RunnablePrintBalance.java;664127046/1;/CS313 (part A)/src/runnables/RunnableStandingOrder.java;2310146574/1;/CS313 (part A)/src/runnables/RunnableTransfer.java;2460767215/1;/CS313 (part A)/src/runnables/RunnableWithdraw.java;754934009/1;/CS313 (part A)/src/tests/Driver1.java;2941746303/1;/CS313 (part A)/src/tests/Driver2.java;3046757948/1;/CS313 (part A)/src/tests/Driver3.java;349972874/1;/CS313 (part A)/src/tests/Driver4.java;2477954086/1;/CS313 (part A)/src/tests/Driver5.java;3629298637/1;/CS313 (part A)/src/bank_accounts/Account.java;2189505156/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_W8zSMLSXEealmOi8IymRlA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_W8zSMbSXEealmOi8IymRlA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_W8z5QLSXEealmOi8IymRlA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_W8z5QbSXEealmOi8IymRlA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_W8z5QrSXEealmOi8IymRlA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_W80gULSXEealmOi8IymRlA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_W80gUbSXEealmOi8IymRlA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_W80gUrSXEealmOi8IymRlA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_W81ucLSXEealmOi8IymRlA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_W82VgLSXEealmOi8IymRlA" name="bank_accounts">
+      <packagedElement xmi:type="uml:Class" xmi:id="_W9oYobSXEealmOi8IymRlA" name="Current">
+        <ownedComment xmi:id="_W_30ULSXEealmOi8IymRlA">
+          <body>&#xD;
+This is the current account, it's only additional feature is the ability to&#xD;
+transfer&#xD;
+&#xD;
+@Group6</body>
+        </ownedComment>
+        <generalization xmi:id="_W_KpsLSXEealmOi8IymRlA" general="_W-CBQrSXEealmOi8IymRlA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_W_yUwbSXEealmOi8IymRlA" name="Current" specification="_W9pmwLSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W_yUwrSXEealmOi8IymRlA" name="accNo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W_yUw7SXEealmOi8IymRlA" name="accName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W_yUxLSXEealmOi8IymRlA" type="_W9oYobSXEealmOi8IymRlA" direction="return"/>
+          <language>java</language>
+          <body>super(accNo, accName);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_W9pmwLSXEealmOi8IymRlA" name="Current" method="_W_yUwbSXEealmOi8IymRlA">
+          <eAnnotations xmi:id="_W9pmw7SXEealmOi8IymRlA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_W9pmxLSXEealmOi8IymRlA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_W9pmwbSXEealmOi8IymRlA" name="accNo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W9pmwrSXEealmOi8IymRlA" name="accName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W9qN0LSXEealmOi8IymRlA" type="_W9oYobSXEealmOi8IymRlA" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_W9q04LSXEealmOi8IymRlA" name="Saver">
+        <ownedComment xmi:id="_W_30UbSXEealmOi8IymRlA">
+          <body>&#xD;
+The saver account type has no additional functionality&#xD;
+&#xD;
+@Group6</body>
+        </ownedComment>
+        <generalization xmi:id="_W_LQwLSXEealmOi8IymRlA" general="_W-CBQrSXEealmOi8IymRlA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_W_y70LSXEealmOi8IymRlA" name="Saver" specification="_W9rb8LSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W_y70bSXEealmOi8IymRlA" name="accNo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W_y70rSXEealmOi8IymRlA" name="accName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W_y707SXEealmOi8IymRlA" type="_W9q04LSXEealmOi8IymRlA" direction="return"/>
+          <language>java</language>
+          <body>super(accNo, accName);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_W9rb8LSXEealmOi8IymRlA" name="Saver" method="_W_y70LSXEealmOi8IymRlA">
+          <eAnnotations xmi:id="_W9sDALSXEealmOi8IymRlA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_W9sDAbSXEealmOi8IymRlA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_W9rb8bSXEealmOi8IymRlA" name="accNo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W9rb8rSXEealmOi8IymRlA" name="accName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W9sDArSXEealmOi8IymRlA" type="_W9q04LSXEealmOi8IymRlA" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_W9sqELSXEealmOi8IymRlA" name="Student">
+        <ownedComment xmi:id="_W_4bYLSXEealmOi8IymRlA">
+          <body>This class is the student account type and has the addition features of a&#xD;
+standing order functionality and transfer&#xD;
+&#xD;
+@Group6</body>
+        </ownedComment>
+        <generalization xmi:id="_W_LQwbSXEealmOi8IymRlA" general="_W-CBQrSXEealmOi8IymRlA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_W_y71LSXEealmOi8IymRlA" name="Student" specification="_W9tRILSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W_y71bSXEealmOi8IymRlA" name="accNo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W_y71rSXEealmOi8IymRlA" name="accName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W_y717SXEealmOi8IymRlA" type="_W9sqELSXEealmOi8IymRlA" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>super(accNo, accName);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_W9tRILSXEealmOi8IymRlA" name="Student" method="_W_y71LSXEealmOi8IymRlA">
+          <eAnnotations xmi:id="_W9tRI7SXEealmOi8IymRlA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_W9tRJLSXEealmOi8IymRlA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_W9tRIbSXEealmOi8IymRlA" name="accNo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W9tRIrSXEealmOi8IymRlA" name="accName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W9tRJbSXEealmOi8IymRlA" type="_W9sqELSXEealmOi8IymRlA" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_W-CBQrSXEealmOi8IymRlA" name="Account">
+        <ownedComment xmi:id="_W_4bZrSXEealmOi8IymRlA">
+          <body>This class is the super class for all the account types. It gives them all&#xD;
+the basic functionality they will need for performing the specific situations&#xD;
+&#xD;
+@Group6</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_W_uqYLSXEealmOi8IymRlA" name="balance" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_W_uqYbSXEealmOi8IymRlA" name="accountNo" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_W_uqY7SXEealmOi8IymRlA" name="accountName" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_W_vRcbSXEealmOi8IymRlA" name="interest">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_W_vRcrSXEealmOi8IymRlA" name="standingOrderNumber" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_W_v4gLSXEealmOi8IymRlA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_W_v4gbSXEealmOi8IymRlA" name="cashLock" type="_W_W28bSXEealmOi8IymRlA" association="_XAAXMbSXEealmOi8IymRlA"/>
+        <ownedAttribute xmi:id="_W_v4g7SXEealmOi8IymRlA" name="cashAvailableCondition" type="_W_WP4LSXEealmOi8IymRlA" association="_XAA-QbSXEealmOi8IymRlA"/>
+        <ownedAttribute xmi:id="_W_wfkbSXEealmOi8IymRlA" name="noImpendingOpsCondition" type="_W_WP4LSXEealmOi8IymRlA" association="_XABlUbSXEealmOi8IymRlA"/>
+        <ownedAttribute xmi:id="_W_xGoLSXEealmOi8IymRlA" name="stillWaiting">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedAttribute>
+        <interfaceRealization xmi:id="_W_jrQLSXEealmOi8IymRlA" client="_W-CBQrSXEealmOi8IymRlA" supplier="_W_eywbSXEealmOi8IymRlA" contract="_W_eywbSXEealmOi8IymRlA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_W_1_JrSXEealmOi8IymRlA" name="Account" specification="_W-DPYLSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W_1_J7SXEealmOi8IymRlA" name="accNo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W_1_KLSXEealmOi8IymRlA" name="accName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W_1_KbSXEealmOi8IymRlA" type="_W-CBQrSXEealmOi8IymRlA" direction="return"/>
+          <language>java</language>
+          <body>balance = 0.0;&#xD;
+		accountNo = accNo;&#xD;
+		accountName = accName;&#xD;
+		cashLock = new ReentrantLock();&#xD;
+		cashAvailableCondition = cashLock.newCondition();&#xD;
+		noImpendingOpsCondition = cashLock.newCondition();&#xD;
+		stillWaiting = true;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_W_2mMLSXEealmOi8IymRlA" name="setBalance" specification="_W-EdgLSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W_2mMbSXEealmOi8IymRlA" name="value">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>if (value >= 0) {&#xD;
+			this.balance = value;&#xD;
+			System.out.println(&quot;The balance on &quot; + getAccName() + &quot; has been set to £&quot; + this.balance + &quot;.&quot;);&#xD;
+		} else {&#xD;
+			System.out.println(&quot;The value must be above zero.&quot;);&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_W_2mMrSXEealmOi8IymRlA" name="printBalance" specification="_W-EdgrSXEealmOi8IymRlA">
+          <language>java</language>
+          <body>cashLock.lock();&#xD;
+		System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (PB): Trying to print the balance on &quot; +getAccName()+ &quot;...&quot;);&#xD;
+		System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (PB): Checking for any possible concurrent balance-changing operations to have terminated...&quot;);&#xD;
+		noImpendingOpsCondition.await(5, TimeUnit.SECONDS);&#xD;
+		try {&#xD;
+			System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (PB): There are no impending balance-changing operations.&quot;);&#xD;
+			System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (PB): The balance on &quot; + getAccName() + &quot; is £&quot; + getBalance() + &quot;.&quot;);&#xD;
+			stillWaiting = noImpendingOpsCondition.await(5, TimeUnit.SECONDS);			&#xD;
+		} finally {&#xD;
+			cashLock.unlock();&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_W_2mM7SXEealmOi8IymRlA" name="getAccNo" specification="_W-FEkLSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W_2mNLSXEealmOi8IymRlA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return this.accountNo;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_W_2mNbSXEealmOi8IymRlA" name="getAccName" specification="_W-FEkrSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W_2mNrSXEealmOi8IymRlA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return this.accountName;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_W_3NQLSXEealmOi8IymRlA" name="deposit" specification="_W-FroLSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W_3NQbSXEealmOi8IymRlA" name="value">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>cashLock.lock();&#xD;
+		System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (DE): Trying to deposit £&quot; + value + &quot; on &quot; + getAccName() + &quot;...&quot;);&#xD;
+		try {&#xD;
+			if (value > 0) {&#xD;
+				balance += value;&#xD;
+				System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (DE): £&quot; + value + &quot; have been deposited on &quot; + getAccName() + &quot;.&quot;);&#xD;
+				System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (DE): The balance on &quot; + getAccName() + &quot; is now £&quot; + getBalance() + &quot;.&quot;);&#xD;
+				cashAvailableCondition.signalAll();&#xD;
+				noImpendingOpsCondition.signalAll();&#xD;
+			} else {&#xD;
+				System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (DE): The value must be above zero.&quot;);&#xD;
+			}&#xD;
+		} finally {&#xD;
+			cashLock.unlock();&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_W_3NQrSXEealmOi8IymRlA" name="withdraw" specification="_W-GSsLSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W_3NQ7SXEealmOi8IymRlA" name="value">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>cashLock.lock();&#xD;
+		System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (WI): Trying to withdraw £&quot; + value + &quot; from &quot; + getAccName() + &quot;...&quot;);&#xD;
+		try {&#xD;
+			if (value > 0) {&#xD;
+				while (balance &lt; value) {&#xD;
+					System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (WI): There are currently insufficient funds available in the account to withdraw the amount selected.&quot;);&#xD;
+					System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (WI): Checking for any possible balance-increasing operations...&quot;);&#xD;
+					if (!stillWaiting) {&#xD;
+						Thread.currentThread().interrupt();&#xD;
+					}&#xD;
+					stillWaiting = cashAvailableCondition.await(2, TimeUnit.SECONDS);&#xD;
+				}&#xD;
+				balance -= value;&#xD;
+				System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (WI): £&quot; + value + &quot; have been withdrawn from &quot; + getAccName() + &quot;.&quot;);&#xD;
+				System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (WI): The balance on &quot; + getAccName() + &quot; is now £&quot; + getBalance() + &quot;.&quot;);&#xD;
+				noImpendingOpsCondition.signalAll();&#xD;
+			}&#xD;
+			else {&#xD;
+				System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (WI): The value must be above zero.&quot;);&#xD;
+			}&#xD;
+		} finally {&#xD;
+			cashLock.unlock();&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_W_3NRLSXEealmOi8IymRlA" name="transfer" specification="_W_YsILSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W_3NRbSXEealmOi8IymRlA" name="value">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W_3NRrSXEealmOi8IymRlA" name="recipient" type="_W-CBQrSXEealmOi8IymRlA"/>
+          <language>java</language>
+          <body>cashLock.lock();&#xD;
+		System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (TR): Trying to transfer £&quot; + value + &quot; from &quot; + getAccName() + &quot; to &quot; + recipient.getAccName() + &quot;...&quot;);&#xD;
+		try {&#xD;
+			if (value > 0) {&#xD;
+			while (balance &lt; value) {&#xD;
+				System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (TR): There are currently insufficient funds available in the account to transfer the amount selected.&quot;);&#xD;
+				System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (TR): Checking for any possible balance-increasing operations...&quot;);&#xD;
+				if (!stillWaiting) {&#xD;
+					Thread.currentThread().interrupt();&#xD;
+				}&#xD;
+					stillWaiting = cashAvailableCondition.await(2, TimeUnit.SECONDS);&#xD;
+			}&#xD;
+			recipient.balance += value;&#xD;
+			this.balance -= value;&#xD;
+			System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (TR): £&quot; + value + &quot; have been transferred from &quot; + getAccName() + &quot; to &quot; + recipient.getAccName() + &quot;.&quot;);&#xD;
+			System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (TR): The balance on &quot; + getAccName() + &quot; is now £&quot; + getBalance() + &quot;.&quot;);&#xD;
+			System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (TR): The balance on &quot; + recipient.getAccName() + &quot; is now £&quot; + recipient.getBalance() + &quot;.&quot;);&#xD;
+			noImpendingOpsCondition.signalAll();&#xD;
+			}&#xD;
+			else {&#xD;
+				System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (TR): The value must be above zero.&quot;);&#xD;
+			}&#xD;
+		} finally {&#xD;
+			cashLock.unlock();&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_W_3NR7SXEealmOi8IymRlA" name="createStandingOrder" specification="_W_Z6QLSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W_3NSLSXEealmOi8IymRlA" name="recipient" type="_W-CBQrSXEealmOi8IymRlA"/>
+          <ownedParameter xmi:id="_W_3NSbSXEealmOi8IymRlA" name="value">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W_3NSrSXEealmOi8IymRlA" name="occurrence">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>cashLock.lock();&#xD;
+		if (getStandingOrderNumber() == 1) {&#xD;
+			System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (SO): Trying to set up a standing order of £&quot;&#xD;
+					+ value + &quot; occurring &quot; + occurrence + &quot; time(s) from &quot; + getAccName() + &quot; to &quot;&#xD;
+					+ recipient.getAccName() + &quot;...&quot;);&#xD;
+		}&#xD;
+		try {&#xD;
+			if (value > 0) {&#xD;
+				while (balance &lt; value) {&#xD;
+					System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (SO): There are currently insufficient funds available in the account to set up the standing order.&quot;);&#xD;
+					System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (SO): Checking for any possible balance-increasing operations...&quot;);&#xD;
+					if (!stillWaiting) {&#xD;
+						Thread.currentThread().interrupt();&#xD;
+					}&#xD;
+					stillWaiting = cashAvailableCondition.await(2, TimeUnit.SECONDS);&#xD;
+				}&#xD;
+				recipient.balance += value;&#xD;
+				this.balance -= value;&#xD;
+				if (getStandingOrderNumber() == 1) {System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (SO): A standing order of £&quot;&#xD;
+						+ value + &quot; occurring &quot; + occurrence + &quot; time(s) has been set up from &quot; + getAccName() + &quot; to &quot;&#xD;
+						+ recipient.getAccName() + &quot;.&quot;);&#xD;
+				}&#xD;
+				System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (SO): Standing order #&quot; + getStandingOrderNumber() + &quot; has been carried out: £&quot; + value + &quot; have been transferred from &quot; + getAccName() + &quot; to &quot; + recipient.getAccName() + &quot;.&quot;);&#xD;
+				System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (SO): The balance on &quot; + getAccName() + &quot; is now £&quot; + getBalance() + &quot;.&quot;);&#xD;
+				System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (SO): The balance on &quot; + recipient.getAccName() + &quot; is now £&quot; + recipient.getBalance() + &quot;.&quot;);&#xD;
+				noImpendingOpsCondition.signalAll();&#xD;
+				standingOrderNumber++;	&#xD;
+			}&#xD;
+			else {&#xD;
+				System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (SO): The value must be above zero.&quot;);&#xD;
+			}&#xD;
+		} finally {&#xD;
+			cashLock.unlock();&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_W-DPYLSXEealmOi8IymRlA" name="Account" method="_W_1_JrSXEealmOi8IymRlA">
+          <eAnnotations xmi:id="_W-D2crSXEealmOi8IymRlA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_W-D2c7SXEealmOi8IymRlA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_W-D2cLSXEealmOi8IymRlA" name="accNo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W-D2cbSXEealmOi8IymRlA" name="accName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W-D2dLSXEealmOi8IymRlA" type="_W-CBQrSXEealmOi8IymRlA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_W-EdgLSXEealmOi8IymRlA" name="setBalance" method="_W_2mMLSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W-EdgbSXEealmOi8IymRlA" name="value">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_W-EdgrSXEealmOi8IymRlA" name="printBalance" method="_W_2mMrSXEealmOi8IymRlA" raisedException="_W_kSULSXEealmOi8IymRlA"/>
+        <ownedOperation xmi:id="_W-FEkLSXEealmOi8IymRlA" name="getAccNo" method="_W_2mM7SXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W-FEkbSXEealmOi8IymRlA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_W-FEkrSXEealmOi8IymRlA" name="getAccName" method="_W_2mNbSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W-FEk7SXEealmOi8IymRlA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_W-FroLSXEealmOi8IymRlA" name="deposit" method="_W_3NQLSXEealmOi8IymRlA" raisedException="_W_kSULSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W-FrobSXEealmOi8IymRlA" name="value">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_W-GSsLSXEealmOi8IymRlA" name="withdraw" method="_W_3NQrSXEealmOi8IymRlA" raisedException="_W_kSULSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W-GSsbSXEealmOi8IymRlA" name="value">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_W-G5wLSXEealmOi8IymRlA" name="run"/>
+        <ownedOperation xmi:id="_W_YsILSXEealmOi8IymRlA" name="transfer" method="_W_3NRLSXEealmOi8IymRlA" raisedException="_W_kSULSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W_YsIbSXEealmOi8IymRlA" name="value">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W_ZTMLSXEealmOi8IymRlA" name="recipient" type="_W-CBQrSXEealmOi8IymRlA"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_W_Z6QLSXEealmOi8IymRlA" name="createStandingOrder" method="_W_3NR7SXEealmOi8IymRlA" raisedException="_W_kSULSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W_Z6QbSXEealmOi8IymRlA" name="recipient" type="_W-CBQrSXEealmOi8IymRlA"/>
+          <ownedParameter xmi:id="_W_Z6QrSXEealmOi8IymRlA" name="value">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W_Z6Q7SXEealmOi8IymRlA" name="occurrence">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_XAAXMbSXEealmOi8IymRlA" name="" memberEnd="_XAAXMrSXEealmOi8IymRlA _W_v4gbSXEealmOi8IymRlA">
+        <ownedEnd xmi:id="_XAAXMrSXEealmOi8IymRlA" name="" type="_W-CBQrSXEealmOi8IymRlA" association="_XAAXMbSXEealmOi8IymRlA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_XAA-QbSXEealmOi8IymRlA" name="" memberEnd="_XAA-QrSXEealmOi8IymRlA _W_v4g7SXEealmOi8IymRlA">
+        <ownedEnd xmi:id="_XAA-QrSXEealmOi8IymRlA" name="" type="_W-CBQrSXEealmOi8IymRlA" association="_XAA-QbSXEealmOi8IymRlA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_XABlUbSXEealmOi8IymRlA" name="" memberEnd="_XABlUrSXEealmOi8IymRlA _W_wfkbSXEealmOi8IymRlA">
+        <ownedEnd xmi:id="_XABlUrSXEealmOi8IymRlA" name="" type="_W-CBQrSXEealmOi8IymRlA" association="_XABlUbSXEealmOi8IymRlA"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_W828kLSXEealmOi8IymRlA" name="runnables">
+      <packagedElement xmi:type="uml:Class" xmi:id="_W9ufQLSXEealmOi8IymRlA" name="RunnableDeposit">
+        <ownedAttribute xmi:id="_W_nVoLSXEealmOi8IymRlA" name="DELAY" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_W_nVobSXEealmOi8IymRlA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_W_nVorSXEealmOi8IymRlA" name="account" visibility="private" type="_W-CBQrSXEealmOi8IymRlA" association="_W_7esLSXEealmOi8IymRlA"/>
+        <ownedAttribute xmi:id="_W_ojwLSXEealmOi8IymRlA" name="value" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedAttribute>
+        <interfaceRealization xmi:id="_W_gA4LSXEealmOi8IymRlA" client="_W9ufQLSXEealmOi8IymRlA" supplier="_W_eywbSXEealmOi8IymRlA" contract="_W_eywbSXEealmOi8IymRlA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_W_y72LSXEealmOi8IymRlA" name="RunnableDeposit" specification="_W_Me4LSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W_y72bSXEealmOi8IymRlA" name="a" type="_W-CBQrSXEealmOi8IymRlA"/>
+          <ownedParameter xmi:id="_W_y72rSXEealmOi8IymRlA" name="v">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W_y727SXEealmOi8IymRlA" type="_W9ufQLSXEealmOi8IymRlA" direction="return"/>
+          <language>java</language>
+          <body>account = a;&#xD;
+		value = v;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_W_zi4LSXEealmOi8IymRlA" name="run" specification="_W9vGULSXEealmOi8IymRlA">
+          <language>java</language>
+          <body>try {&#xD;
+			account.deposit(value);&#xD;
+			Thread.sleep(DELAY);&#xD;
+		}&#xD;
+		catch (InterruptedException e) {&#xD;
+			System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (DE): The thread has timed out.&quot;);	&#xD;
+		}&#xD;
+		&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_W9vGULSXEealmOi8IymRlA" name="run" method="_W_zi4LSXEealmOi8IymRlA"/>
+        <ownedOperation xmi:id="_W_Me4LSXEealmOi8IymRlA" name="RunnableDeposit" method="_W_y72LSXEealmOi8IymRlA">
+          <eAnnotations xmi:id="_W_Me47SXEealmOi8IymRlA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_W_Me5LSXEealmOi8IymRlA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_W_Me4bSXEealmOi8IymRlA" name="a" type="_W-CBQrSXEealmOi8IymRlA"/>
+          <ownedParameter xmi:id="_W_Me4rSXEealmOi8IymRlA" name="v">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W_Me5bSXEealmOi8IymRlA" type="_W9ufQLSXEealmOi8IymRlA" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_W9w7gLSXEealmOi8IymRlA" name="RunnablePrintBalance">
+        <ownedAttribute xmi:id="_W_ojwrSXEealmOi8IymRlA" name="DELAY" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_W_pK0LSXEealmOi8IymRlA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_W_pK0bSXEealmOi8IymRlA" name="account" visibility="private" type="_W-CBQrSXEealmOi8IymRlA" association="_W_8s0LSXEealmOi8IymRlA"/>
+        <interfaceRealization xmi:id="_W_gn8LSXEealmOi8IymRlA" client="_W9w7gLSXEealmOi8IymRlA" supplier="_W_eywbSXEealmOi8IymRlA" contract="_W_eywbSXEealmOi8IymRlA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_W_zi4bSXEealmOi8IymRlA" name="RunnablePrintBalance" specification="_W_NtALSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W_zi4rSXEealmOi8IymRlA" name="a" type="_W-CBQrSXEealmOi8IymRlA"/>
+          <ownedParameter xmi:id="_W_zi47SXEealmOi8IymRlA" type="_W9w7gLSXEealmOi8IymRlA" direction="return"/>
+          <language>java</language>
+          <body>account = a;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_W_zi5LSXEealmOi8IymRlA" name="run" specification="_W9xikLSXEealmOi8IymRlA">
+          <language>java</language>
+          <body>try {&#xD;
+			account.printBalance();&#xD;
+			Thread.sleep(DELAY);&#xD;
+		}&#xD;
+		catch (InterruptedException e) {&#xD;
+			System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (PB): The thread has timed out.&quot;);&#xD;
+		}&#xD;
+		&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_W9xikLSXEealmOi8IymRlA" name="run" method="_W_zi5LSXEealmOi8IymRlA"/>
+        <ownedOperation xmi:id="_W_NtALSXEealmOi8IymRlA" name="RunnablePrintBalance" method="_W_zi4bSXEealmOi8IymRlA">
+          <eAnnotations xmi:id="_W_OUEbSXEealmOi8IymRlA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_W_OUErSXEealmOi8IymRlA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_W_OUELSXEealmOi8IymRlA" name="a" type="_W-CBQrSXEealmOi8IymRlA"/>
+          <ownedParameter xmi:id="_W_OUE7SXEealmOi8IymRlA" type="_W9w7gLSXEealmOi8IymRlA" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_W9ywsLSXEealmOi8IymRlA" name="RunnableStandingOrder">
+        <ownedAttribute xmi:id="_W_px4LSXEealmOi8IymRlA" name="DELAY" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_W_px4bSXEealmOi8IymRlA" value="1000"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_W_px4rSXEealmOi8IymRlA" name="account" visibility="private" type="_W-CBQrSXEealmOi8IymRlA" association="_W_9T4bSXEealmOi8IymRlA"/>
+        <ownedAttribute xmi:id="_W_qY8LSXEealmOi8IymRlA" name="recipient" visibility="private" type="_W-CBQrSXEealmOi8IymRlA" association="_W_968bSXEealmOi8IymRlA"/>
+        <ownedAttribute xmi:id="_W_qY8rSXEealmOi8IymRlA" name="value" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_W_rAAbSXEealmOi8IymRlA" name="occurrence" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <interfaceRealization xmi:id="_W_hPALSXEealmOi8IymRlA" client="_W9ywsLSXEealmOi8IymRlA" supplier="_W_eywbSXEealmOi8IymRlA" contract="_W_eywbSXEealmOi8IymRlA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_W_0J8LSXEealmOi8IymRlA" name="RunnableStandingOrder" specification="_W_PiMLSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W_0J8bSXEealmOi8IymRlA" name="a" type="_W-CBQrSXEealmOi8IymRlA"/>
+          <ownedParameter xmi:id="_W_0J8rSXEealmOi8IymRlA" name="r" type="_W-CBQrSXEealmOi8IymRlA"/>
+          <ownedParameter xmi:id="_W_0J87SXEealmOi8IymRlA" name="v">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W_0J9LSXEealmOi8IymRlA" name="o">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W_0J9bSXEealmOi8IymRlA" type="_W9ywsLSXEealmOi8IymRlA" direction="return"/>
+          <language>java</language>
+          <body>account = a;&#xD;
+		recipient = r;&#xD;
+		value = v;&#xD;
+		occurrence = o;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_W_0J9rSXEealmOi8IymRlA" name="run" specification="_W90l4LSXEealmOi8IymRlA">
+          <language>java</language>
+          <body>try {&#xD;
+			for(int i=0; i&lt;occurrence; i++){&#xD;
+				account.createStandingOrder(recipient, value, occurrence);&#xD;
+				Thread.sleep(DELAY);&#xD;
+			}&#xD;
+		}&#xD;
+		catch (InterruptedException e) {&#xD;
+			System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (SO): There are no impending balance-increasing operations, the thread has timed out.&quot;);&#xD;
+		}&#xD;
+		&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_W90l4LSXEealmOi8IymRlA" name="run" method="_W_0J9rSXEealmOi8IymRlA"/>
+        <ownedOperation xmi:id="_W_PiMLSXEealmOi8IymRlA" name="RunnableStandingOrder" method="_W_0J8LSXEealmOi8IymRlA">
+          <eAnnotations xmi:id="_W_QJQbSXEealmOi8IymRlA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_W_QJQrSXEealmOi8IymRlA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_W_PiMbSXEealmOi8IymRlA" name="a" type="_W-CBQrSXEealmOi8IymRlA"/>
+          <ownedParameter xmi:id="_W_PiMrSXEealmOi8IymRlA" name="r" type="_W-CBQrSXEealmOi8IymRlA"/>
+          <ownedParameter xmi:id="_W_PiM7SXEealmOi8IymRlA" name="v">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W_QJQLSXEealmOi8IymRlA" name="o">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W_QJQ7SXEealmOi8IymRlA" type="_W9ywsLSXEealmOi8IymRlA" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_W92bELSXEealmOi8IymRlA" name="RunnableTransfer">
+        <ownedAttribute xmi:id="_W_rnELSXEealmOi8IymRlA" name="DELAY" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_W_rnEbSXEealmOi8IymRlA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_W_rnErSXEealmOi8IymRlA" name="account" visibility="private" type="_W-CBQrSXEealmOi8IymRlA" association="_W_-iAbSXEealmOi8IymRlA"/>
+        <ownedAttribute xmi:id="_W_sOIbSXEealmOi8IymRlA" name="recipient" visibility="private" type="_W-CBQrSXEealmOi8IymRlA" association="_W__JEbSXEealmOi8IymRlA"/>
+        <ownedAttribute xmi:id="_W_s1MLSXEealmOi8IymRlA" name="value" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedAttribute>
+        <interfaceRealization xmi:id="_W_idILSXEealmOi8IymRlA" client="_W92bELSXEealmOi8IymRlA" supplier="_W_eywbSXEealmOi8IymRlA" contract="_W_eywbSXEealmOi8IymRlA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_W_0J97SXEealmOi8IymRlA" name="RunnableTransfer" specification="_W_RXYLSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W_0J-LSXEealmOi8IymRlA" name="a" type="_W-CBQrSXEealmOi8IymRlA"/>
+          <ownedParameter xmi:id="_W_0J-bSXEealmOi8IymRlA" name="r" type="_W-CBQrSXEealmOi8IymRlA"/>
+          <ownedParameter xmi:id="_W_0J-rSXEealmOi8IymRlA" name="v">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W_0J-7SXEealmOi8IymRlA" type="_W92bELSXEealmOi8IymRlA" direction="return"/>
+          <language>java</language>
+          <body>account = a;&#xD;
+		recipient = r;&#xD;
+		value = v;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_W_0xALSXEealmOi8IymRlA" name="run" specification="_W93pMLSXEealmOi8IymRlA">
+          <language>java</language>
+          <body>try {&#xD;
+			account.transfer(value, recipient);&#xD;
+			Thread.sleep(DELAY);&#xD;
+		}&#xD;
+		catch (InterruptedException e) {&#xD;
+			System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (TR): There are no impending balance-increasing operations, the thread has timed out.&quot;);&#xD;
+		}&#xD;
+		&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_W93pMLSXEealmOi8IymRlA" name="run" method="_W_0xALSXEealmOi8IymRlA"/>
+        <ownedOperation xmi:id="_W_RXYLSXEealmOi8IymRlA" name="RunnableTransfer" method="_W_0J97SXEealmOi8IymRlA">
+          <eAnnotations xmi:id="_W_R-crSXEealmOi8IymRlA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_W_R-c7SXEealmOi8IymRlA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_W_RXYbSXEealmOi8IymRlA" name="a" type="_W-CBQrSXEealmOi8IymRlA"/>
+          <ownedParameter xmi:id="_W_R-cLSXEealmOi8IymRlA" name="r" type="_W-CBQrSXEealmOi8IymRlA"/>
+          <ownedParameter xmi:id="_W_R-cbSXEealmOi8IymRlA" name="v">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W_R-dLSXEealmOi8IymRlA" type="_W92bELSXEealmOi8IymRlA" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_W95eYLSXEealmOi8IymRlA" name="RunnableWithdraw">
+        <ownedAttribute xmi:id="_W_s1MrSXEealmOi8IymRlA" name="DELAY" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_W_tcQLSXEealmOi8IymRlA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_W_tcQbSXEealmOi8IymRlA" name="account" visibility="private" type="_W-CBQrSXEealmOi8IymRlA" association="_W__wIbSXEealmOi8IymRlA"/>
+        <ownedAttribute xmi:id="_W_uDULSXEealmOi8IymRlA" name="value" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedAttribute>
+        <interfaceRealization xmi:id="_W_jEMLSXEealmOi8IymRlA" client="_W95eYLSXEealmOi8IymRlA" supplier="_W_eywbSXEealmOi8IymRlA" contract="_W_eywbSXEealmOi8IymRlA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_W_0xAbSXEealmOi8IymRlA" name="RunnableWithdraw" specification="_W_TMkLSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W_0xArSXEealmOi8IymRlA" name="a" type="_W-CBQrSXEealmOi8IymRlA"/>
+          <ownedParameter xmi:id="_W_0xA7SXEealmOi8IymRlA" name="v">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W_0xBLSXEealmOi8IymRlA" type="_W95eYLSXEealmOi8IymRlA" direction="return"/>
+          <language>java</language>
+          <body>account = a;&#xD;
+		value = v;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_W_0xBbSXEealmOi8IymRlA" name="run" specification="_W96sgLSXEealmOi8IymRlA">
+          <language>java</language>
+          <body>try {&#xD;
+			account.withdraw(value);&#xD;
+			Thread.sleep(DELAY);&#xD;
+		}&#xD;
+		catch (InterruptedException e) {&#xD;
+			System.out.println(&quot;Thread with ID &quot; + Thread.currentThread().getId() + &quot; (WI): There are no impending balance-increasing operations, the thread has timed out.&quot;);&#xD;
+		}&#xD;
+		&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_W96sgLSXEealmOi8IymRlA" name="run" method="_W_0xBbSXEealmOi8IymRlA"/>
+        <ownedOperation xmi:id="_W_TMkLSXEealmOi8IymRlA" name="RunnableWithdraw" method="_W_0xAbSXEealmOi8IymRlA">
+          <eAnnotations xmi:id="_W_TzoLSXEealmOi8IymRlA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_W_TzobSXEealmOi8IymRlA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_W_TMkbSXEealmOi8IymRlA" name="a" type="_W-CBQrSXEealmOi8IymRlA"/>
+          <ownedParameter xmi:id="_W_TMkrSXEealmOi8IymRlA" name="v">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_W_TzorSXEealmOi8IymRlA" type="_W95eYLSXEealmOi8IymRlA" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_W_7esLSXEealmOi8IymRlA" name="" memberEnd="_W_8FwLSXEealmOi8IymRlA _W_nVorSXEealmOi8IymRlA">
+        <ownedEnd xmi:id="_W_8FwLSXEealmOi8IymRlA" name="" type="_W9ufQLSXEealmOi8IymRlA" association="_W_7esLSXEealmOi8IymRlA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_W_8s0LSXEealmOi8IymRlA" name="" memberEnd="_W_8s0bSXEealmOi8IymRlA _W_pK0bSXEealmOi8IymRlA">
+        <ownedEnd xmi:id="_W_8s0bSXEealmOi8IymRlA" name="" type="_W9w7gLSXEealmOi8IymRlA" association="_W_8s0LSXEealmOi8IymRlA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_W_9T4bSXEealmOi8IymRlA" name="" memberEnd="_W_9T4rSXEealmOi8IymRlA _W_px4rSXEealmOi8IymRlA">
+        <ownedEnd xmi:id="_W_9T4rSXEealmOi8IymRlA" name="" type="_W9ywsLSXEealmOi8IymRlA" association="_W_9T4bSXEealmOi8IymRlA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_W_968bSXEealmOi8IymRlA" name="" memberEnd="_W_968rSXEealmOi8IymRlA _W_qY8LSXEealmOi8IymRlA">
+        <ownedEnd xmi:id="_W_968rSXEealmOi8IymRlA" name="" type="_W9ywsLSXEealmOi8IymRlA" association="_W_968bSXEealmOi8IymRlA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_W_-iAbSXEealmOi8IymRlA" name="" memberEnd="_W_-iArSXEealmOi8IymRlA _W_rnErSXEealmOi8IymRlA">
+        <ownedEnd xmi:id="_W_-iArSXEealmOi8IymRlA" name="" type="_W92bELSXEealmOi8IymRlA" association="_W_-iAbSXEealmOi8IymRlA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_W__JEbSXEealmOi8IymRlA" name="" memberEnd="_W__JErSXEealmOi8IymRlA _W_sOIbSXEealmOi8IymRlA">
+        <ownedEnd xmi:id="_W__JErSXEealmOi8IymRlA" name="" type="_W92bELSXEealmOi8IymRlA" association="_W__JEbSXEealmOi8IymRlA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_W__wIbSXEealmOi8IymRlA" name="" memberEnd="_W__wIrSXEealmOi8IymRlA _W_tcQbSXEealmOi8IymRlA">
+        <ownedEnd xmi:id="_W__wIrSXEealmOi8IymRlA" name="" type="_W95eYLSXEealmOi8IymRlA" association="_W__wIbSXEealmOi8IymRlA"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_W84xwLSXEealmOi8IymRlA" name="tests">
+      <packagedElement xmi:type="uml:Class" xmi:id="_W9l8YLSXEealmOi8IymRlA" name="DriverExample">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_W_xtsLSXEealmOi8IymRlA" name="main" specification="_W9nKgLSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W_xtsbSXEealmOi8IymRlA" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W_yUwLSXEealmOi8IymRlA" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>Account a1 = new Account(1, &quot;Account #215&quot;);&#xD;
+		Account a2 = new Account(2, &quot;Account #232&quot;);&#xD;
+		a1.setBalance(0);&#xD;
+		a2.setBalance(0);&#xD;
+		&#xD;
+		RunnablePrintBalance rpb = new RunnablePrintBalance(a1);&#xD;
+		RunnableDeposit rd1 = new RunnableDeposit(a1, -40);&#xD;
+		RunnableWithdraw rw1 = new RunnableWithdraw(a1, -50);&#xD;
+		RunnableDeposit rd2 = new RunnableDeposit(a1, 0);&#xD;
+		RunnableTransfer rt = new RunnableTransfer(a1, a2, -10);		&#xD;
+		RunnableWithdraw rw2 = new RunnableWithdraw(a1, 50);&#xD;
+		&#xD;
+		Thread rpbT = new Thread(rpb);&#xD;
+		Thread rd1T = new Thread(rd1);&#xD;
+		Thread rw1T = new Thread(rw1);&#xD;
+		Thread rd2T = new Thread(rd2);&#xD;
+		Thread rtT = new Thread(rt);&#xD;
+		Thread rw2T = new Thread(rw2);&#xD;
+		&#xD;
+		rpbT.start();&#xD;
+		rd1T.start();&#xD;
+		rw1T.start();&#xD;
+		rd2T.start();&#xD;
+		rtT.start();&#xD;
+		rw2T.start();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_W9nKgLSXEealmOi8IymRlA" name="main" isStatic="true" method="_W_xtsLSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W9nKgbSXEealmOi8IymRlA" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W9nxkbSXEealmOi8IymRlA" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_W976oLSXEealmOi8IymRlA" name="Driver1">
+        <ownedComment xmi:id="_W_4bYbSXEealmOi8IymRlA">
+          <body> This driver class tests the scenario where&#xD;
+ *	the two account holders are trying to check&#xD;
+ the balance simultaneously. &#xD;
+ &#xD;
+ @Group6</body>
+        </ownedComment>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_W_1YELSXEealmOi8IymRlA" name="main" specification="_W98hsLSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W_1YEbSXEealmOi8IymRlA" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W_1YErSXEealmOi8IymRlA" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>System.out.println(&quot;Scenario #1&quot;);&#xD;
+		System.out.println();&#xD;
+		&#xD;
+		Account a1 = new Account(1, &quot;Account #1&quot;);&#xD;
+		a1.setBalance(85.0);&#xD;
+		&#xD;
+		RunnablePrintBalance rpb1 = new RunnablePrintBalance(a1);&#xD;
+		RunnablePrintBalance rpb2 = new RunnablePrintBalance(a1);&#xD;
+&#xD;
+		Thread rpbT1 = new Thread(rpb1);&#xD;
+		Thread rpbT2 = new Thread(rpb2);&#xD;
+&#xD;
+		rpbT1.start();&#xD;
+		rpbT2.start();			&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_W98hsLSXEealmOi8IymRlA" name="main" isStatic="true" method="_W_1YELSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W98hsbSXEealmOi8IymRlA" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W99IwLSXEealmOi8IymRlA" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_W99IwrSXEealmOi8IymRlA" name="Driver2">
+        <ownedComment xmi:id="_W_4bYrSXEealmOi8IymRlA">
+          <body> This driver class tests the scenario where one account&#xD;
+ holder tries to check the balance while the other is&#xD;
+ depositing/withdrawing money.&#xD;
+ &#xD;
+ @Group6</body>
+        </ownedComment>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_W_1YE7SXEealmOi8IymRlA" name="main" specification="_W99v0LSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W_1YFLSXEealmOi8IymRlA" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W_1YFbSXEealmOi8IymRlA" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>System.out.println(&quot;Scenario #2&quot;);&#xD;
+		System.out.println();&#xD;
+		&#xD;
+		Account a2 = new Account(2, &quot;Account #2&quot;);&#xD;
+		a2.setBalance(126.0);&#xD;
+		&#xD;
+		RunnablePrintBalance rpb = new RunnablePrintBalance(a2);&#xD;
+		RunnableDeposit rd = new RunnableDeposit(a2, 40);&#xD;
+		RunnableWithdraw rw = new RunnableWithdraw(a2, 50);&#xD;
+		&#xD;
+		Thread rpbT = new Thread(rpb);&#xD;
+		Thread rdT = new Thread(rd);&#xD;
+		Thread rwT = new Thread(rw);&#xD;
+		&#xD;
+		rpbT.start();&#xD;
+		rdT.start();&#xD;
+		rwT.start();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_W99v0LSXEealmOi8IymRlA" name="main" isStatic="true" method="_W_1YE7SXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W99v0bSXEealmOi8IymRlA" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W9-W4bSXEealmOi8IymRlA" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_W9-W47SXEealmOi8IymRlA" name="Driver3">
+        <ownedComment xmi:id="_W_4bY7SXEealmOi8IymRlA">
+          <body> This driver class tests the scenario where&#xD;
+ the two	account	holders	are	trying simultaneously&#xD;
+ to deposit/withdraw money &amp; then check the&#xD;
+ balance. &#xD;
+ &#xD;
+ @Group6</body>
+        </ownedComment>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_W_1YFrSXEealmOi8IymRlA" name="main" specification="_W9-98LSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W_1YF7SXEealmOi8IymRlA" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W_1YGLSXEealmOi8IymRlA" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>System.out.println(&quot;Scenario #3&quot;);&#xD;
+		System.out.println();&#xD;
+		&#xD;
+		Account a3 = new Account(3, &quot;Account #3&quot;);&#xD;
+		a3.setBalance(252.0);&#xD;
+		&#xD;
+		RunnableDeposit rd = new RunnableDeposit(a3, 100.0);&#xD;
+		RunnableWithdraw rw = new RunnableWithdraw(a3, 50.0);&#xD;
+		RunnablePrintBalance rpb = new RunnablePrintBalance(a3);&#xD;
+		&#xD;
+		Thread rdT = new Thread(rd);&#xD;
+		Thread rwT = new Thread(rw);&#xD;
+		Thread rpbT = new Thread(rpb);&#xD;
+&#xD;
+		rdT.start();&#xD;
+		rwT.start();&#xD;
+		rpbT.start();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_W9-98LSXEealmOi8IymRlA" name="main" isStatic="true" method="_W_1YFrSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W9-98bSXEealmOi8IymRlA" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W9_lAbSXEealmOi8IymRlA" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_W9_lA7SXEealmOi8IymRlA" name="Driver4">
+        <ownedComment xmi:id="_W_4bZLSXEealmOi8IymRlA">
+          <body> This driver class tests the scenario where&#xD;
+ the	two	account	holders	are	trying simultaneously&#xD;
+ to deposit/withdraw money &amp; then check the balance,&#xD;
+ but at the same time a bank employee is in the&#xD;
+ process of completing a standing order in/out&#xD;
+ the account.&#xD;
+ &#xD;
+ @Group6</body>
+        </ownedComment>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_W_1_ILSXEealmOi8IymRlA" name="main" specification="_W-AMELSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W_1_IbSXEealmOi8IymRlA" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W_1_IrSXEealmOi8IymRlA" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>System.out.println(&quot;Scenario #4&quot;);&#xD;
+		System.out.println();&#xD;
+		&#xD;
+		Account a4 = new Account(4, &quot;Account #4&quot;);&#xD;
+		Account a1 = new Account(1, &quot;Account #1&quot;);&#xD;
+		a4.setBalance(16.0);&#xD;
+		a1.setBalance(25.0);&#xD;
+		&#xD;
+		RunnableDeposit rd = new RunnableDeposit(a4, 100.0);&#xD;
+		RunnablePrintBalance rpt = new RunnablePrintBalance(a4);&#xD;
+		RunnableStandingOrder rso = new RunnableStandingOrder(a4, a1, 20, 1);&#xD;
+		&#xD;
+		Thread rdT = new Thread(rd);&#xD;
+		Thread rptT = new Thread(rpt);&#xD;
+		Thread rsoT = new Thread(rso);&#xD;
+&#xD;
+		rdT.start();&#xD;
+		rptT.start();&#xD;
+		rsoT.start();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_W-AMELSXEealmOi8IymRlA" name="main" isStatic="true" method="_W_1_ILSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W-AMEbSXEealmOi8IymRlA" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W-AzIbSXEealmOi8IymRlA" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_W-AzI7SXEealmOi8IymRlA" name="Driver5">
+        <ownedComment xmi:id="_W_4bZbSXEealmOi8IymRlA">
+          <body> This driver class tests the scenario where there&#xD;
+ are insufficient funds to complete a withdraw. This&#xD;
+ is an open-ended scenario and it is	up to you to decide&#xD;
+ what the expected behaviour will be. Ideally (i.e. in&#xD;
+ order to achieve full marks), your system should implement&#xD;
+ a mechanism that waits for the balance to grow.&#xD;
+ &#xD;
+ @Group6</body>
+        </ownedComment>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_W_1_I7SXEealmOi8IymRlA" name="main" specification="_W-BaMLSXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W_1_JLSXEealmOi8IymRlA" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W_1_JbSXEealmOi8IymRlA" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>System.out.println(&quot;Scenario #5&quot;);&#xD;
+		System.out.println();&#xD;
+		&#xD;
+		Account a5 = new Account(5, &quot;Account #5&quot;);&#xD;
+		Account a1 = new Account(1, &quot;Account #1&quot;);&#xD;
+		a5.setBalance(26.0);&#xD;
+		a1.setBalance(135.0);&#xD;
+		&#xD;
+		RunnableWithdraw rw = new RunnableWithdraw(a5, 50.0);&#xD;
+		RunnableStandingOrder rso = new RunnableStandingOrder(a1, a5, 10, 4);&#xD;
+		&#xD;
+		Thread rwT = new Thread(rw);&#xD;
+		Thread rsoT = new Thread(rso);&#xD;
+&#xD;
+		rwT.start();&#xD;
+		rsoT.start();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_W-BaMLSXEealmOi8IymRlA" name="main" isStatic="true" method="_W_1_I7SXEealmOi8IymRlA">
+          <ownedParameter xmi:id="_W-BaMbSXEealmOi8IymRlA" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W-CBQLSXEealmOi8IymRlA" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_W9OI8LSXEealmOi8IymRlA" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_W9OI8bSXEealmOi8IymRlA" name="util">
+        <packagedElement xmi:type="uml:Package" xmi:id="_W9OI8rSXEealmOi8IymRlA" name="concurrent">
+          <packagedElement xmi:type="uml:Package" xmi:id="_W9OI87SXEealmOi8IymRlA" name="locks">
+            <packagedElement xmi:type="uml:Interface" xmi:id="_W_WP4LSXEealmOi8IymRlA" name="Condition"/>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_W_W28bSXEealmOi8IymRlA" name="Lock"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_W_XeAbSXEealmOi8IymRlA" name="ReentrantLock"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Enumeration" xmi:id="_W_VBwLSXEealmOi8IymRlA" name="TimeUnit"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_W_eywLSXEealmOi8IymRlA" name="lang">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_W_eywbSXEealmOi8IymRlA" name="Runnable"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_W_kSULSXEealmOi8IymRlA" name="InterruptedException"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_Wx1_YLSXEealmOi8IymRlA">
+      <eAnnotations xmi:id="_Wx4boLSXEealmOi8IymRlA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_Wx5CsLSXEealmOi8IymRlA" base_Package="_WpU8kLSXEealmOi8IymRlA">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_W9nxkLSXEealmOi8IymRlA" base_Element="_W9nKgLSXEealmOi8IymRlA"/>
+  <UMLLabProfile:Array xmi:id="_W9oYoLSXEealmOi8IymRlA" base_Element="_W9nKgbSXEealmOi8IymRlA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_W98hsrSXEealmOi8IymRlA" base_Element="_W98hsLSXEealmOi8IymRlA"/>
+  <UMLLabProfile:Array xmi:id="_W99IwbSXEealmOi8IymRlA" base_Element="_W98hsbSXEealmOi8IymRlA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_W9-W4LSXEealmOi8IymRlA" base_Element="_W99v0LSXEealmOi8IymRlA"/>
+  <UMLLabProfile:Array xmi:id="_W9-W4rSXEealmOi8IymRlA" base_Element="_W99v0bSXEealmOi8IymRlA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_W9_lALSXEealmOi8IymRlA" base_Element="_W9-98LSXEealmOi8IymRlA"/>
+  <UMLLabProfile:Array xmi:id="_W9_lArSXEealmOi8IymRlA" base_Element="_W9-98bSXEealmOi8IymRlA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_W-AzILSXEealmOi8IymRlA" base_Element="_W-AMELSXEealmOi8IymRlA"/>
+  <UMLLabProfile:Array xmi:id="_W-AzIrSXEealmOi8IymRlA" base_Element="_W-AMEbSXEealmOi8IymRlA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_W-BaMrSXEealmOi8IymRlA" base_Element="_W-BaMLSXEealmOi8IymRlA"/>
+  <UMLLabProfile:Array xmi:id="_W-CBQbSXEealmOi8IymRlA" base_Element="_W-BaMbSXEealmOi8IymRlA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_W-Hg0LSXEealmOi8IymRlA" base_Element="_W-G5wLSXEealmOi8IymRlA"/>
+  <UMLLabProfile:Reference xmi:id="_W_Vo0LSXEealmOi8IymRlA" base_Element="_W_VBwLSXEealmOi8IymRlA"/>
+  <UMLLabProfile:Reference xmi:id="_W_W28LSXEealmOi8IymRlA" base_Element="_W_WP4LSXEealmOi8IymRlA"/>
+  <UMLLabProfile:Reference xmi:id="_W_XeALSXEealmOi8IymRlA" base_Element="_W_W28bSXEealmOi8IymRlA"/>
+  <UMLLabProfile:Reference xmi:id="_W_YFELSXEealmOi8IymRlA" base_Element="_W_XeAbSXEealmOi8IymRlA"/>
+  <UMLLabProfile:Reference xmi:id="_W_fZ0LSXEealmOi8IymRlA" base_Element="_W_eywbSXEealmOi8IymRlA"/>
+  <UMLLabProfile:Reference xmi:id="_W_k5YLSXEealmOi8IymRlA" base_Element="_W_kSULSXEealmOi8IymRlA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_W_n8sLSXEealmOi8IymRlA" base_Element="_W_nVorSXEealmOi8IymRlA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_W_ojwbSXEealmOi8IymRlA" base_Element="_W_ojwLSXEealmOi8IymRlA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_W_pK0rSXEealmOi8IymRlA" base_Element="_W_pK0bSXEealmOi8IymRlA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_W_px47SXEealmOi8IymRlA" base_Element="_W_px4rSXEealmOi8IymRlA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_W_qY8bSXEealmOi8IymRlA" base_Element="_W_qY8LSXEealmOi8IymRlA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_W_rAALSXEealmOi8IymRlA" base_Element="_W_qY8rSXEealmOi8IymRlA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_W_rAArSXEealmOi8IymRlA" base_Element="_W_rAAbSXEealmOi8IymRlA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_W_sOILSXEealmOi8IymRlA" base_Element="_W_rnErSXEealmOi8IymRlA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_W_sOIrSXEealmOi8IymRlA" base_Element="_W_sOIbSXEealmOi8IymRlA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_W_s1MbSXEealmOi8IymRlA" base_Element="_W_s1MLSXEealmOi8IymRlA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_W_tcQrSXEealmOi8IymRlA" base_Element="_W_tcQbSXEealmOi8IymRlA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_W_uDUbSXEealmOi8IymRlA" base_Element="_W_uDULSXEealmOi8IymRlA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_W_uqYrSXEealmOi8IymRlA" base_Element="_W_uqYbSXEealmOi8IymRlA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_W_vRcLSXEealmOi8IymRlA" base_Element="_W_uqY7SXEealmOi8IymRlA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_W_v4grSXEealmOi8IymRlA" base_Element="_W_v4gbSXEealmOi8IymRlA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_W_wfkLSXEealmOi8IymRlA" base_Element="_W_v4g7SXEealmOi8IymRlA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_W_wfkrSXEealmOi8IymRlA" base_Element="_W_wfkbSXEealmOi8IymRlA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_W_xGobSXEealmOi8IymRlA" base_Element="_W_xGoLSXEealmOi8IymRlA"/>
+  <UMLLabProfile:Reference xmi:id="_W_8FwbSXEealmOi8IymRlA" base_Element="_W_7esLSXEealmOi8IymRlA"/>
+  <UMLLabProfile:Reference xmi:id="_W_9T4LSXEealmOi8IymRlA" base_Element="_W_8s0LSXEealmOi8IymRlA"/>
+  <UMLLabProfile:Reference xmi:id="_W_968LSXEealmOi8IymRlA" base_Element="_W_9T4bSXEealmOi8IymRlA"/>
+  <UMLLabProfile:Reference xmi:id="_W_-iALSXEealmOi8IymRlA" base_Element="_W_968bSXEealmOi8IymRlA"/>
+  <UMLLabProfile:Reference xmi:id="_W__JELSXEealmOi8IymRlA" base_Element="_W_-iAbSXEealmOi8IymRlA"/>
+  <UMLLabProfile:Reference xmi:id="_W__wILSXEealmOi8IymRlA" base_Element="_W__JEbSXEealmOi8IymRlA"/>
+  <UMLLabProfile:Reference xmi:id="_XAAXMLSXEealmOi8IymRlA" base_Element="_W__wIbSXEealmOi8IymRlA"/>
+  <UMLLabProfile:Reference xmi:id="_XAA-QLSXEealmOi8IymRlA" base_Element="_XAAXMbSXEealmOi8IymRlA"/>
+  <UMLLabProfile:Reference xmi:id="_XABlULSXEealmOi8IymRlA" base_Element="_XAA-QbSXEealmOi8IymRlA"/>
+  <UMLLabProfile:Reference xmi:id="_XACMYLSXEealmOi8IymRlA" base_Element="_XABlUbSXEealmOi8IymRlA"/>
+</xmi:XMI>

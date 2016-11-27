@@ -1,10 +1,19 @@
-public class DriverTest {
+package tests;
+import bank_accounts.Account;
+import runnables.RunnableDeposit;
+import runnables.RunnablePrintBalance;
+import runnables.RunnableTransfer;
+import runnables.RunnableWithdraw;
+
+public class DriverExample {
 
 	public static void main(String args[]) {
+		
 		Account a1 = new Account(1, "Account #215");
 		Account a2 = new Account(2, "Account #232");
 		a1.setBalance(0);
 		a2.setBalance(0);
+		
 		RunnablePrintBalance rpb = new RunnablePrintBalance(a1);
 		RunnableDeposit rd1 = new RunnableDeposit(a1, -40);
 		RunnableWithdraw rw1 = new RunnableWithdraw(a1, -50);
@@ -26,5 +35,4 @@ public class DriverTest {
 		rtT.start();
 		rw2T.start();
 	}
-	
 }
