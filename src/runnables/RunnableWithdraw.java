@@ -1,4 +1,5 @@
 package runnables;
+
 import bank_accounts.Account;
 
 public class RunnableWithdraw implements Runnable {
@@ -10,15 +11,15 @@ public class RunnableWithdraw implements Runnable {
 		account = a;
 		value = v;
 	}
-	
+
 	public void run() {
 		try {
 			account.withdraw(value);
 			Thread.sleep(DELAY);
+		} catch (InterruptedException e) {
+			System.out.println("Thread with ID " + Thread.currentThread().getId()
+					+ " (WI): There are no impending balance-increasing operations, the thread has timed out.");
 		}
-		catch (InterruptedException e) {
-			System.out.println("Thread with ID " + Thread.currentThread().getId() + " (WI): There are no impending balance-increasing operations, the thread has timed out.");
-		}
-		
+
 	}
 }

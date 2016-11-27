@@ -12,5 +12,5 @@ public class Student extends Account {
 	public Student(int accNo, String accName) {
 		super(accNo, accName);
 	}
-		
+
 }
